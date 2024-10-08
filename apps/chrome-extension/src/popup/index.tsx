@@ -1,5 +1,4 @@
 
-import React from "react";
 import "../style.css";
 import { RouterProvider, createMemoryRouter } from "react-router-dom";
 
@@ -11,6 +10,7 @@ import { SignInPage } from "./routes/sign-in";
 import { SignUpPage } from "./routes/sign-up";
 import { Index } from "./routes";
 import { Settings } from "./routes/settings";
+import { SDKFeatures } from "./routes/sdk-features";
 
 // Create the router
 // This removes the need for an App.tsx file
@@ -22,6 +22,7 @@ const router = createMemoryRouter([
       { path: "/sign-in", element: <SignInPage /> },
       { path: "/sign-up", element: <SignUpPage /> },
       { path: "/settings", element: <Settings /> },
+      { path: "/sdk-features", element: <SDKFeatures /> }
     ],
   },
 ]);

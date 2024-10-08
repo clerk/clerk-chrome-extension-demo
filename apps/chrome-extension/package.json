@@ -13,17 +13,17 @@
     "dev:firefox": "plasmo dev --target=firefox-mv2",
     "package": "plasmo package",
     "package:firefox": "plasmo package --target=firefox-mv2",
-    "start": "web-ext run --source-dir ./build/chrome-mv3-dev -t chromium --start-url chrome://newtab",
     "start:firefox": "web-ext run --source-dir ./build/firefox-mv2-dev"
   },
   "dependencies": {
-    "@clerk/chrome-extension": "1.1.6-snapshot.v6146fa5",
+    "@clerk/chrome-extension": "2.0.0-snapshot.v4fb8995",
+    "@clerk/shared": "^2.4.0",
     "plasmo": "0.88.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "^6.25.1",
     "tailwindcss": "3.4.1",
-    "web-ext": "^8.2.0"
+    "webextension-polyfill": "^0.12.0"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "4.1.1",
@@ -31,6 +31,7 @@
     "@types/node": "20.11.5",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
+    "@types/webextension-polyfill": "^0.10.7",
     "postcss": "8.4.33",
     "prettier": "3.2.4",
     "typescript": "5.3.3"
@@ -41,8 +42,8 @@
       "storage"
     ],
     "host_permissions": [
-      "http://localhost/*",
-      "https://$CLERK_FRONTEND_API/*"
+      "$CLERK_FRONTEND_API/*",
+      "$PLASMO_PUBLIC_CLERK_SYNC_HOST/*"
     ],
     "key": "$CRX_PUBLIC_KEY"
   }
