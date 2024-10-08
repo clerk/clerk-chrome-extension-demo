@@ -18,6 +18,12 @@
     "turbo": "^2.0.14",
     "typescript": "^5.5.4"
   },
+  "pnpm": {
+    "overrides": {
+      "braces": "^3.0.3",
+      "msgpackr": "^1.10.1"
+    }
+  },
   "packageManager": "pnpm@8.15.6",
   "engines": {
     "node": ">=18"

@@ -4,6 +4,10 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  braces: ^3.0.3
+  msgpackr: ^1.10.1
+
 importers:
 
   .:
@@ -10551,7 +10555,7 @@ snapshots:
 
   lmdb@2.7.11:
     dependencies:
-      msgpackr: 1.8.5
+      msgpackr: 1.11.0
       node-addon-api: 4.3.0
       node-gyp-build-optional-packages: 5.0.6
       ordered-binary: 1.5.1
@@ -11068,6 +11072,7 @@ snapshots:
       is-path-inside: 4.0.0
       json5: 2.2.3
       mnemonic-id: 3.2.7
+      msgpackr: 1.11.0
       node-object-hash: 3.0.0
       package-json: 8.1.1
       process: 0.11.10
@@ -12145,7 +12150,7 @@ snapshots:
   typescript@5.3.3: {}
 
   typescript@5.5.4: {}
-
+  
   unbox-primitive@1.0.2:
     dependencies:
       call-bind: 1.0.7
