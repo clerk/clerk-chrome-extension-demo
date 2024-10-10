@@ -43,7 +43,7 @@
     ],
     "host_permissions": [
       "$CLERK_FRONTEND_API/*",
-      "$PLASMO_PUBLIC_CLERK_SYNC_HOST/*"
+      "http://$PLASMO_PUBLIC_SYNC_HOST/*"
     ],
     "key": "$CRX_PUBLIC_KEY"
   }
