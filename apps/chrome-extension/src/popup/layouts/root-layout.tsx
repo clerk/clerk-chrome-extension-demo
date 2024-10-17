@@ -24,7 +24,7 @@ export const RootLayout = () => {
       routerReplace={(to) => navigate(to, { replace: true })}
       publishableKey={PUBLISHABLE_KEY}
       afterSignOutUrl="/"
-      syncHost={`http://${SYNC_HOST}`}
+      syncHost={SYNC_HOST}
     >
       <div className="plasmo-w-[785px] plasmo-h-[600px] plasmo-flex plasmo-flex-col">
         <main className="plasmo-grow plasmo-border-2 plasmo-border-red-500">

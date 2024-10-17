@@ -1,4 +1,4 @@
-import { __unstable__createClerkClient as createClerkClient } from '@clerk/chrome-extension/background';
+import { createClerkClient } from '@clerk/chrome-extension/background';
 
 console.log('Background Script w/ Clerk createClerkClient() demo loaded')
 
