@@ -19,8 +19,10 @@ async function getToken() {
 // NOTE: A runtime listener cannot be async.
 //       It must return true, in order to keep the connection open and send a response later.
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  console.log('Handling request for the user\s current token')
-  getToken().then((token) => sendResponse({ token }));
+  if (request.greeting === "get-token") {
+    console.log('Handling request for the user\'s current token')
+    getToken().then((token) => sendResponse({ token })).catch((error) => console.error(JSON.stringify(error)));
+  }
   return true;
 });
 
