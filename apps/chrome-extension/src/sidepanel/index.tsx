@@ -1,4 +1,3 @@
-
 import "../style.css";
 import { RouterProvider, createMemoryRouter } from "react-router-dom";
 
@@ -27,7 +26,7 @@ const router = createMemoryRouter([
   },
 ]);
 
-export default function PopupIndex() {
+export default function SidePanelIndex() {
   return (
     <RouterProvider router={router} />
   )
