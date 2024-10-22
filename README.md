@@ -47,25 +47,25 @@ To run the example locally, you need to:
 
 1. Sign up for a Clerk account at [https://clerk.com](https://dashboard.clerk.com/sign-up?utm_source=readme&utm_medium=owned&utm_campaign=chrome-extension&utm_content=10-24-2023&utm_term=clerk-chrome-extension-demo).
 
-1. Go to the [Clerk dashboard](https://dashboard.clerk.com?utm_source=readme&utm_medium=owned&utm_campaign=chrome-extension&utm_content=10-24-2023&utm_term=clerk-chrome-extension-demo) and create an application.
+2. Go to the [Clerk dashboard](https://dashboard.clerk.com?utm_source=readme&utm_medium=owned&utm_campaign=chrome-extension&utm_content=10-24-2023&utm_term=clerk-chrome-extension-demo) and create an application.
 
-1. Copy the [`.env.development.example` file](./apps/chrome-extension/.env.development.example) to `/apps/chrome-extension/.env.development` and add the required enviroment variables.
+3. Copy the [`.env.development.example` file](./apps/chrome-extension/.env.development.example) to `/apps/chrome-extension/.env.development` and add the required environment variables.
 * `PLASMO_PUBLIC_CLERK_PUBLISHABLE_KEY` - the Clerk Publishable Key from the [API keys](https://dashboard.clerk.com/last-active?path=api-keys) Dashboard page.
 * `CLERK_FRONTEND_API` - the Clerk Frontend API URL from the `Show API URLs` button on the [API keys](https://dashboard.clerk.com/last-active?path=api-keys) dashboard page.
 * `PLASMO_PUBLIC_SYNC_HOST` - this is only required if you want to test the Sync Host feature. This is configured to match the web app included in this repo.
 
-1. Copy the [`.env.chrome.example` file](./apps/chrome-extension/.env.chrome.example) to `/apps/chrome-extension/.env.chrome` and add the following required environment variables.
+4. Copy the [`.env.chrome.example` file](./apps/chrome-extension/.env.chrome.example) to `/apps/chrome-extension/.env.chrome` and add the following required environment variables.
 * `CRX_PUBLIC_KEY` - the public key for your Chrome Extension. The [Chrome Extension Quickstart](https://clerk.com/docs/quickstarts/chrome-extension) and the [Configure a Consistent CRX ID](https://clerk.com/docs/references/chrome-extension/configure-consistent-crx-id) cover creating this.
 
-1. Copy the [`.env.example` file](./apps/web-app/.env.example) to `/apps/web-app/.env` and add the requred enviroment variables.
+5. Copy the [`.env.example` file](./apps/web-app/.env.example) to `/apps/web-app/.env` and add the required environment variables.
 * `VITE_CLERK_PUBLISHABLE_KEY` - the Clerk Publishable Key from the [API keys](https://dashboard.clerk.com/last-active?path=api-keys) Dashboard page.
 
 
-5. `pnpm install` the required dependencies for both applications.
+6. `pnpm install` the required dependencies for both applications.
 
-6. `pnpm dev` to launch the web application and launch the dev server for the extension and create it initial build.
+7. `pnpm dev` to launch the web application and launch the dev server for the extension and create it initial build.
 
-7. Install the extension in Chrome by loading it as an [unpacked extension](https://clerk.com/docs/quickstarts/chrome-extension#load-your-chrome-extension-into-your-chromium-based-browser).
+8. Install the extension in Chrome by loading it as an [unpacked extension](https://clerk.com/docs/quickstarts/chrome-extension#load-your-chrome-extension-into-your-chromium-based-browser).
 
 ## Learn more
 
@@ -81,9 +81,9 @@ To learn more about Clerk and Chrome Extensions, check out the following resourc
 
 1. To see the usage of React Router, open the popup and navigate between the page using the buttons at the bottom.
 
-1. For Sync Host, make sure you are signed out of the extension and the web applications. Once fully signed out, sign into the web application in any manner you wish, including OAuth. Once done, open the popup and you will see you are signed in correctly. **WARNING:** You must be using the same Clerk instance and the same Publishable key in both. If you are using a different Publishable key then this feature will not work.
+2. For Sync Host, make sure you are signed out of the extension and the web applications. Once fully signed out, sign into the web application in any manner you wish, including OAuth. Once done, open the popup and you will see you are signed in correctly. **WARNING:** You must be using the same Clerk instance and the same Publishable key in both. If you are using a different Publishable key then this feature will not work.
 
-1. To test the `createClerkClient()` function, sign into the extension. Once signed in there is a `SDK Features` button in the bottom menu. Navigate to that page and then click the `Open Demo Tab` button. This will open a new tab in your browser. In that tab click the `Get Token` button. The box for the token will be populated with your current session token.
+3. To test the `createClerkClient()` function, sign into the extension. Once signed in there is a `SDK Features` button in the bottom menu. Navigate to that page and then click the `Open Demo Tab` button. This will open a new tab in your browser. In that tab click the `Get Token` button. The box for the token will be populated with your current session token.
 
 
 ## Found an issue or want to leave feedback
