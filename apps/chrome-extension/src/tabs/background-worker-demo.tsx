@@ -9,9 +9,10 @@ export default function NewTab() {
   const getToken = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
+    console.log('[Content Script]: Sending request to bakcground service worker');
     // send a message to the background service worker
     chrome.runtime.sendMessage('test', response => {
-      console.log('MESSAGE RESPONSE', JSON.stringify(response));
+      console.log('[Content Script]:', JSON.stringify(response));
       setToken(response.token);
     });
   };

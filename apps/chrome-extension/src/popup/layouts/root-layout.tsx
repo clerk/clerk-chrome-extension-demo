@@ -1,4 +1,4 @@
-import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { ClerkProvider } from "@clerk/chrome-extension";
 import { NavBar } from "~components/nav-bar";
 
@@ -11,9 +11,7 @@ if (!PUBLISHABLE_KEY || !SYNC_HOST) {
 
 export const RootLayout = () => {
   const navigate = useNavigate();
-  const location = useLocation();
 
-  console.log("location", location);
   return (
     <ClerkProvider
       routerPush={(to) => navigate(to)}
