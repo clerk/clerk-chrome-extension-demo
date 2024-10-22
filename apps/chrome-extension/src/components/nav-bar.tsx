@@ -14,17 +14,26 @@ export const NavBar = () => {
             <Link to="/sdk-features">SDK Features</Link>
           </Button>
           <div className="plasmo-grow plasmo-items-center plasmo-justify-end plasmo-flex plasmo-pr-2">
-            <Button variant="link" asChild className="plasmo-mx-2">
-              <Link to="/settings">Settings</Link>
-            </Button>
             <UserButton />
           </div>
         </div>
       </SignedIn>
       <SignedOut>
-        <Link to="/">Home</Link>
-        <Link to="/sign-in">Sign In</Link>
-        <Link to="/sign-up">Sign Up</Link>
+        <div className="plasmo-flex plasmo-flex-row plasmo-w-full plasmo-items-center plasmo-bg-gray-800 plasmo-border-t plasmo-border-t-gray-600 plasmo-py-2">
+          <Button variant="link" asChild>
+            <Link to="/">Home</Link>
+          </Button>
+          <div className="plasmo-grow plasmo-items-center plasmo-justify-end plasmo-flex plasmo-pr-2">
+
+            <Button variant="link" asChild className="plasmo-mx-2">
+              <Link to="/sign-in">Sign In</Link>
+            </Button>
+            <Button variant="link" asChild className="plasmo-mx-2">
+
+              <Link to="/sign-up">Sign Up</Link>
+            </Button>
+          </div>
+        </div>
       </SignedOut>
 
     </>

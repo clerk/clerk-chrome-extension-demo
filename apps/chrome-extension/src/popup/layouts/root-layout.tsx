@@ -22,8 +22,8 @@ export const RootLayout = () => {
       afterSignOutUrl="/"
       syncHost={SYNC_HOST}
     >
-      <div className="plasmo-w-[785px] plasmo-h-[600px] plasmo-flex plasmo-flex-col plasmo-bg-black">
-        <main className="plasmo-grow plasmo-pb-16">
+      <div className="plasmo-w-[785px] plasmo-h-[600px] plasmo-flex plasmo-flex-col plasmo-bg-black plasmo-text-white">
+        <main className="plasmo-grow plasmo-h-[543px]">
           <Outlet />
         </main>
         <footer className="plasmo-fixed plasmo-bottom-0 plasmo-w-full">
