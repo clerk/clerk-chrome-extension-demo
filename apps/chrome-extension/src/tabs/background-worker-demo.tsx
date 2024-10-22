@@ -7,7 +7,7 @@ export default function NewTab() {
     e.preventDefault();
 
     // send a message to the background service worker
-    chrome.runtime.sendMessage({ greeting: 'get-token' }, response => {
+    chrome.runtime.sendMessage('test', response => {
       console.log('MESSAGE RESPONSE', JSON.stringify(response));
       setToken(response.token);
     });
