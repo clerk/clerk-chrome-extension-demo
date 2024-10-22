@@ -43,8 +43,7 @@
   "manifest": {
     "permissions": [
       "cookies",
-      "storage",
-      "sidePanel"
+      "storage"
     ],
     "host_permissions": [
       "$CLERK_FRONTEND_API/*",
