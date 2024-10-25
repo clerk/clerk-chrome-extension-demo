@@ -56,6 +56,7 @@
 			"matchUpdateTypes": ["major"],
 			"automerge": true,
 			"semanticCommitScope": "web-app"
-		},
+		}
+	]
   
 }
