@@ -1,6 +1,61 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
-  ]
+    "config:recommended",
+    		":dependencyDashboard",
+		":automergePatch",
+		":ignoreUnstable",
+		":prHourlyLimit4",
+		":prConcurrentLimit10",
+		":prNotPending",
+		":rebaseStalePrs",
+		":combinePatchMinorReleases",
+		":enableVulnerabilityAlerts",
+		":semanticPrefixFixDepsChoreOthers"
+  ],
+	"minimumReleaseAge": "3 days",
+	"timezone": "GMT",
+	"schedule": ["before 7am on the first day of the month"],
+	"prHeader": "Repo Dependency Update",
+	"assignees": ["royanger"],
+	"reviewers": ["royanger", "tmilewski"],
+	"labels": ["deps"],
+	"branchPrefix": "deps/",
+	"semanticCommitScope": "repo",
+	"commitMessageLowerCase": "never",
+	"separateMajorMinor": true,
+	"packageRules": [
+		{
+			"groupName": "Chrome Extension - Minor and Patch Dependency Update",
+			"groupSlug": "chrome-extension-minor-and-patch",
+			"matchFileNames": ["apps/chrome-extension/package.json"],
+			"matchUpdateTypes": ["patch", "minor"],
+			"automerge": true,
+			"semanticCommitScope": "chrome-extension"
+		},
+		{
+			"groupName": "Chrome Extension - Major Dependency Update",
+			"groupSlug": "chrome-extension-major",
+			"matchFileNames": ["apps/chrome-extension/package.json"],
+			"matchUpdateTypes": ["major"],
+			"automerge": true,
+			"semanticCommitScope": "chrome-extension"
+		},
+{
+			"groupName": "Web App - Minor and Patch Dependency Update",
+			"groupSlug": "web-app-minor-and-patch",
+			"matchFileNames": ["apps/web-app/package.json"],
+			"matchUpdateTypes": ["patch", "minor"],
+			"automerge": true,
+			"semanticCommitScope": "web-app"
+		},
+		{
+			"groupName": "Web App - Major Dependency Update",
+			"groupSlug": "web-app-major",
+			"matchFileNames": ["apps/web-app/package.json"],
+			"matchUpdateTypes": ["major"],
+			"automerge": true,
+			"semanticCommitScope": "web-app"
+		},
+  
 }
