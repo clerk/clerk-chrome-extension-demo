@@ -4,7 +4,7 @@ import {
   SignedIn,
   SignedOut,
   UserButton,
-} from "@clerk/chrome-extension";
+} from '@clerk/chrome-extension';
 
 const PUBLISHABLE_KEY = process.env.PLASMO_PUBLIC_CLERK_PUBLISHABLE_KEY
 const SYNC_HOST = process.env.PLASMO_PUBLIC_SYNC_HOST
