@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "format": "prettier --write ."
+    "format": "prettier . --check --cache --cache-location='node_modules/.cache/.prettiercache'",
+    "format:fix": "prettier . --write --cache --cache-location='node_modules/.cache/.prettiercache' --log-level=warn"
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.2.7",

@@ -12,7 +12,7 @@
     "format": "pnpm run turbo:format:fix",
     "package": "turbo package",
     "package:firefox": "turbo package:firefox",
-    "turbo:format:fix": "trubo format:fix --continue"
+    "turbo:format:fix": "turbo format:fix --continue"
   },
   "devDependencies": {
     "prettier": "^3.3.3",

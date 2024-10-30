@@ -3,18 +3,35 @@
   "ui": "tui",
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env*"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**"
+      ]
     },
     "build:firefox": {
-      "dependsOn": ["^build:firefox"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "dependsOn": [
+        "^build:firefox"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env*"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**"
+      ]
     },
-
     "lint": {
-      "dependsOn": ["^lint"]
+      "dependsOn": [
+        "^lint"
+      ]
     },
     "debug": {
       "cache": false,
@@ -33,14 +50,60 @@
       "persistent": true
     },
     "package": {
-      "dependsOn": ["^package"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "dependsOn": [
+        "^package"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env*"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**"
+      ]
     },
     "package:firefox": {
-      "dependsOn": ["^package:firefox"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "dependsOn": [
+        "^package:firefox"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env*"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**"
+      ]
+    },
+    "//#format": {
+      "outputs": [
+        "node_modules/.cache/.prettiercache"
+      ],
+      "cache": false
+    },
+    "format": {
+      "dependsOn": [
+        "^topo"
+      ],
+      "outputs": [
+        "node_modules/.cache/.prettiercache"
+      ],
+      "cache": false
+    },
+    "//#format:fix": {
+      "outputs": [
+        "node_modules/.cache/.prettiercache"
+      ],
+      "cache": false
+    },
+    "format:fix": {
+      "dependsOn": [
+        "^topo"
+      ],
+      "outputs": [
+        "node_modules/.cache/.prettiercache"
+      ],
+      "cache": false
     }
   }
 }
