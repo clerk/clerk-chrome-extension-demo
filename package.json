@@ -14,11 +14,6 @@
     "package:firefox": "turbo package:firefox",
     "turbo:format:fix": "turbo format:fix --continue"
   },
-  "devDependencies": {
-    "prettier": "^3.3.3",
-    "turbo": "^2.0.14",
-    "typescript": "^5.5.4"
-  },
   "pnpm": {
     "overrides": {
       "braces": "^3.0.3",
@@ -29,8 +24,25 @@
   "engines": {
     "node": ">=18"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "prettier-plugin-packagejson": "^2.5.3",
     "prettier-plugin-tailwindcss": "^0.6.8"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "turbo": "^2.0.14",
+    "typescript": "^5.5.4"
   }
 }
