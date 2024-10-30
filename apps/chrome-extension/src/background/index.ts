@@ -14,7 +14,7 @@ async function getToken() {
   });
   return await clerk.session?.getToken();
 }
-
+// asdf
 // create a listener to listen for messages from content scripts
 // NOTE: A runtime listener cannot be async.
 //       It must return true, in order to keep the connection open and send a response later.
@@ -24,6 +24,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   getToken()
     .then((token) => {
       console.log('[Service Worker]: Sending token in response')
+      console.log('[Service Worker]:', token)
       sendResponse({ token })
     })
     .catch((error) => {
