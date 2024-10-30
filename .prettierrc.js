@@ -5,6 +5,6 @@ module.exports = {
   semi: false,
   singleQuote: true,
   plugins: ["prettier-plugin-tailwindcss", "prettier-plugin-packagejson"],
-  tailwindConfig: "./apps/dashboard/tailwind.config.ts", // Find a better way to do this
+  tailwindConfig: "./apps/chrome-extension/tailwind.config.ts", // Find a better way to do this
   endOfLine: "auto",
 };
