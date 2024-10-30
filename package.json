@@ -1,48 +1,49 @@
 {
-  "name": "clerk-chrome-extension-demo",
-  "private": true,
-  "scripts": {
-    "build": "turbo build",
-    "build:firefox": "turbo build:firefox",
-    "debug": "turbo debug",
-    "debug:firefox": "turbo debug:firefox",
-    "dev": "turbo dev",
-    "dev:firefox": "turbo dev:firefox",
-    "lint": "turbo lint",
-    "format": "pnpm run turbo:format:fix",
-    "package": "turbo package",
-    "package:firefox": "turbo package:firefox",
-    "turbo:format:fix": "turbo format:fix --continue"
-  },
-  "pnpm": {
-    "overrides": {
-      "braces": "^3.0.3",
-      "msgpackr": "^1.10.1"
-    }
-  },
-  "packageManager": "pnpm@9.12.2",
-  "engines": {
-    "node": ">=18"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
-    ]
-  },
-  "dependencies": {
-    "husky": "^9.1.6",
-    "lint-staged": "^15.2.10",
-    "prettier-plugin-packagejson": "^2.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.8"
-  },
-  "devDependencies": {
-    "prettier": "^3.3.3",
-    "turbo": "^2.0.14",
-    "typescript": "^5.5.4"
-  }
+	"name": "clerk-chrome-extension-demo",
+	"private": true,
+	"scripts": {
+		"build": "turbo build",
+		"build:firefox": "turbo build:firefox",
+		"debug": "turbo debug",
+		"debug:firefox": "turbo debug:firefox",
+		"dev": "turbo dev",
+		"dev:firefox": "turbo dev:firefox",
+		"format": "pnpm run turbo:format:fix",
+		"lint": "turbo lint",
+		"package": "turbo package",
+		"package:firefox": "turbo package:firefox",
+		"prepare": "husky",
+		"turbo:format:fix": "turbo format:fix --continue"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx,json,css,scss,md}": [
+			"prettier --write"
+		]
+	},
+	"dependencies": {
+		"husky": "^9.1.6",
+		"lint-staged": "^15.2.10",
+		"prettier-plugin-packagejson": "^2.5.3",
+		"prettier-plugin-tailwindcss": "^0.6.8"
+	},
+	"devDependencies": {
+		"prettier": "^3.3.3",
+		"turbo": "^2.0.14",
+		"typescript": "^5.5.4"
+	},
+	"packageManager": "pnpm@9.12.2",
+	"engines": {
+		"node": ">=18"
+	},
+	"pnpm": {
+		"overrides": {
+			"braces": "^3.0.3",
+			"msgpackr": "^1.10.1"
+		}
+	}
 }
