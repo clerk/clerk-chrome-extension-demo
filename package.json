@@ -9,9 +9,10 @@
     "dev": "turbo dev",
     "dev:firefox": "turbo dev:firefox",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format": "pnpm run turbo:format:fix",
     "package": "turbo package",
-    "package:firefox": "turbo package:firefox"
+    "package:firefox": "turbo package:firefox",
+    "turbo:format:fix": "trubo format:fix --continue"
   },
   "devDependencies": {
     "prettier": "^3.3.3",
@@ -27,5 +28,9 @@
   "packageManager": "pnpm@9.12.2",
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "prettier-plugin-packagejson": "^2.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.8"
   }
 }

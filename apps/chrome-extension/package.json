@@ -11,6 +11,8 @@
     "debug:firefox": "plasmo dev --target=firefox-mv2 --verbose",
     "dev": "plasmo dev",
     "dev:firefox": "plasmo dev --target=firefox-mv2",
+    "format": "prettier . --check --cache --cache-location='node_modules/.cache/.prettiercache'",
+    "format:fix": "prettier . --write --cache --cache-location='node_modules/.cache/.prettiercache' --log-level=warn",
     "package": "plasmo package",
     "package:firefox": "plasmo package --target=firefox-mv2",
     "start:firefox": "web-ext run --source-dir ./build/firefox-mv2-dev"
@@ -19,6 +21,7 @@
     "@clerk/chrome-extension": "2.0.0-snapshot.vfdb35cb",
     "@clerk/shared": "^2.4.0",
     "plasmo": "0.89.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-router-dom": "^6.25.1",
