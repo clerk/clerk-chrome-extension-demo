@@ -13,7 +13,7 @@ async function getToken() {
     syncHost: process.env.PLASMO_PUBLIC_SYNC_HOST
   });
 
-  // TODO: Add this to Changelog and docs
+  // is there is no signed in user then return null
   if (!clerk.session) {
     return null;
   }
@@ -35,7 +35,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     })
     .catch((error) => {
       console.error('[Service Worker]: Error occured -> ', JSON.stringify(error))
-      // TODO: Add to Changelog, docs
+      // Send `null` when there is no authenticated user
       sendResponse({ token: null })
     });
   return true;
