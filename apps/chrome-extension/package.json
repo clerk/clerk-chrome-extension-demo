@@ -16,8 +16,7 @@
     "start:firefox": "web-ext run --source-dir ./build/firefox-mv2-dev"
   },
   "dependencies": {
-    "@clerk/chrome-extension": "2.0.0-snapshot.v746194f",
-    "@clerk/shared": "^2.9.2",
+    "@clerk/chrome-extension": "2.0.0-snapshot.v82229a2b5efc2b13289f104989759757ba878957",
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -47,7 +46,7 @@
     ],
     "host_permissions": [
       "$CLERK_FRONTEND_API/*",
-      "$PLASMO_PUBLIC_SYNC_HOST/*"
+      "$PLASMO_PUBLIC_CLERK_SYNC_HOST/*"
     ],
     "key": "$CRX_PUBLIC_KEY"
   }

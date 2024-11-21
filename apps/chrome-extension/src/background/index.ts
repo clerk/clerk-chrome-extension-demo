@@ -12,14 +12,20 @@ async function getToken() {
     publishableKey,
     syncHost: process.env.PLASMO_PUBLIC_SYNC_HOST
   });
-  return await clerk.session?.getToken();
+
+  // TODO: Add this to Changelog and docs
+  if (!clerk.session) {
+    return null;
+  }
+
+  const token = await clerk.session?.getToken();
+  return `${token} - ${clerk.user.id}`
 }
 // asdf
 // create a listener to listen for messages from content scripts
 // NOTE: A runtime listener cannot be async.
 //       It must return true, in order to keep the connection open and send a response later.
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  // if (request.greeting === "get-token") {
   console.log('[Service Worker]: Handling request for the user\'s current token')
   getToken()
     .then((token) => {
@@ -29,8 +35,9 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     })
     .catch((error) => {
       console.error('[Service Worker]: Error occured -> ', JSON.stringify(error))
+      // TODO: Add to Changelog, docs
+      sendResponse({ token: null })
     });
-  // }
   return true;
 });
 
