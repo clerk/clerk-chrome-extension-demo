@@ -3,7 +3,7 @@ import { ClerkProvider } from "@clerk/chrome-extension";
 import { NavBar } from "~components/nav-bar";
 
 const PUBLISHABLE_KEY = process.env.PLASMO_PUBLIC_CLERK_PUBLISHABLE_KEY
-const SYNC_HOST = process.env.PLASMO_PUBLIC_SYNC_HOST
+const SYNC_HOST = process.env.PLASMO_PUBLIC_CLERK_SYNC_HOST
 
 if (!PUBLISHABLE_KEY || !SYNC_HOST) {
   throw new Error('Please add the PLASMO_PUBLIC_CLERK_PUBLISHABLE_KEY and PLASMO_PUBLIC_SYNC_HOST to the .env.development file')

@@ -6,7 +6,7 @@ export const Home = () => {
       <img className="plasmo-h-auto plasmo-mb-8" src={heroIamge} alt="Clerk Chrome Extension SDK 2.0" />
       <h1 className="plasmo-text-2xl plasmo-font-semibold">Clerk Chrome Extension Demo</h1>
       <p className="plasmo-text-[16px] plasmo-mx-20 plasmo-my-4">
-        Sign in with the popup or syn your auth state with <a className="plasmo-underline" href="https://dashboard.clerk.com">https://dashboard.clerk.com</a>, explore an extension built with React Router for tabs and get a token from a tab-based content script using the new <a className="plasmo-underline" href="https://clerk.com/docs/references/chrome-extension/create-clerk-client">createClerkClient()</a> function just for service workers.
+        Sign in with the popup or sync your auth state with <a className="plasmo-underline" href="http://localhost:5173">http://localhost:5173</a>, explore an extension built with React Router for tabs and get a token from a tab-based content script using the new <a className="plasmo-underline" href="https://clerk.com/docs/references/chrome-extension/create-clerk-client">createClerkClient()</a> function just for service workers.
       </p>
     </div>
   );
