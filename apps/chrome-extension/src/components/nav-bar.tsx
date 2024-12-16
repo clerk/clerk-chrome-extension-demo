@@ -14,6 +14,9 @@ export const NavBar = () => {
             <Link to="/sdk-features">SDK Features</Link>
           </Button>
           <div className="plasmo-grow plasmo-items-center plasmo-justify-end plasmo-flex plasmo-pr-2">
+            <Button variant="link" asChild className="plasmo-mx-2">
+              <Link to="/settings">Settings</Link>
+            </Button>
             <UserButton />
           </div>
         </div>

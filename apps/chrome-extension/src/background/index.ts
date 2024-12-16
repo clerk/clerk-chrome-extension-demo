@@ -10,7 +10,7 @@ if (!publishableKey) {
 async function getToken() {
   const clerk = await createClerkClient({
     publishableKey,
-    syncHost: process.env.PLASMO_PUBLIC_SYNC_HOST
+    syncHost: process.env.PLASMO_PUBLIC_CLERK_SYNC_HOST
   });
 
   // is there is no signed in user then return null

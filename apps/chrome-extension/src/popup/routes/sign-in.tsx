@@ -4,7 +4,6 @@ export const SignInPage = () => {
   return (
     <div className="plasmo-flex plasmo-items-center plasmo-justify-center plasmo-h-[543px] plasmo-overflow-y-auto">
       <SignIn
-        routing="virtual"
         appearance={{
           elements: {
             socialButtons: "plasmo-hidden",

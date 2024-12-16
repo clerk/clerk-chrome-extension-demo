@@ -4,7 +4,6 @@ export const SignUpPage = () => {
   return (
     <div className="plasmo-flex plasmo-flex-col plasmo-items-center plasmo-justify-center plasmo-h-[543px] plasmo-overflow-y-auto">
       <SignUp
-        routing="virtual"
         appearance={{
           elements: {
             socialButtons: "plasmo-hidden",

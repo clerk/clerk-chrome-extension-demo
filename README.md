@@ -52,7 +52,7 @@ To run the example locally, you need to:
 3. Copy the [`.env.development.example` file](./apps/chrome-extension/.env.development.example) to `/apps/chrome-extension/.env.development` and add the required environment variables.
 * `PLASMO_PUBLIC_CLERK_PUBLISHABLE_KEY` - the Clerk Publishable Key from the [API keys](https://dashboard.clerk.com/last-active?path=api-keys) Dashboard page.
 * `CLERK_FRONTEND_API` - the Clerk Frontend API URL from the `Show API URLs` button on the [API keys](https://dashboard.clerk.com/last-active?path=api-keys) dashboard page.
-* `PLASMO_PUBLIC_SYNC_HOST` - this is only required if you want to test the Sync Host feature. This is configured to match the web app included in this repo.
+* `PLASMO_PUBLIC_CLERK_SYNC_HOST` - this is only required if you want to test the Sync Host feature. This is configured to match the web app included in this repo.
 
 4. Copy the [`.env.chrome.example` file](./apps/chrome-extension/.env.chrome.example) to `/apps/chrome-extension/.env.chrome` and add the following required environment variables.
 * `CRX_PUBLIC_KEY` - the public key for your Chrome Extension. The [Chrome Extension Quickstart](https://clerk.com/docs/quickstarts/chrome-extension) and the [Configure a Consistent CRX ID](https://clerk.com/docs/references/chrome-extension/configure-consistent-crx-id) cover creating this.
