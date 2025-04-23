@@ -45,7 +45,7 @@
       "cache": false,
       "persistent": true
     },
-    "dev:firefoxck": {
+    "dev:firefox": {
       "cache": false,
       "persistent": true
     },

@@ -21,7 +21,7 @@ async function getToken() {
   const token = await clerk.session?.getToken();
   return `${token} - ${clerk.user.id}`
 }
-// asdf
+
 // create a listener to listen for messages from content scripts
 // NOTE: A runtime listener cannot be async.
 //       It must return true, in order to keep the connection open and send a response later.
