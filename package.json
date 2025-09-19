@@ -14,9 +14,9 @@
     "package:firefox": "turbo package:firefox"
   },
   "devDependencies": {
-    "prettier": "^3.3.3",
-    "turbo": "^2.3.1",
-    "typescript": "^5.6.3"
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.6",
+    "typescript": "^5.9.2"
   },
   "pnpm": {
     "overrides": {
