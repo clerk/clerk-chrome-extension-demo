@@ -26,7 +26,7 @@ importers:
     dependencies:
       '@clerk/chrome-extension':
         specifier: ^2.6.0
-        version: 2.6.1(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))
+        version: 2.6.2(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))
       '@radix-ui/react-slot':
         specifier: ^1.2.3
         version: 1.2.3(@types/react@19.1.13)(react@19.1.1)
@@ -286,8 +286,8 @@ packages:
   '@base-org/account@2.0.1':
     resolution: {integrity: sha512-tySVNx+vd6XEynZL0uvB10uKiwnAfThr8AbKTwILVG86mPbLAhEOInQIk+uDnvpTvfdUhC1Bi5T/46JvFoLZQQ==}
 
-  '@clerk/chrome-extension@2.6.1':
-    resolution: {integrity: sha512-paAUOzK2+XcF8wCvtxPXWOOiJPHqYyeF7Per3J3hxpfplRS1uDptO/+GEajEEhQA0uV2sqmSZYTiRKtx2ft+JQ==}
+  '@clerk/chrome-extension@2.6.2':
+    resolution: {integrity: sha512-npJTdEIOxaDGgu48eh8Nry6DUz5qfFYtRuS5Cv7kwPueWdtVIC9Yu0YM6eLZMemwhHXMl7dePktKrzOpu5Ct7w==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
@@ -5343,8 +5343,8 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  viem@2.37.7:
-    resolution: {integrity: sha512-KmTK/xc6790I0V9iaiJz8C3RdGevpU+fPvg53eOlfEfsfz0wCypXqOlOmCcjzkpmf2XFoEtu9MAxhMqk8YdNNA==}
+  viem@2.37.8:
+    resolution: {integrity: sha512-mL+5yvCQbRIR6QvngDQMfEiZTfNWfd+/QL5yFaOoYbpH3b1Q2ddwF7YG2eI2AcYSh9LE1gtUkbzZLFUAVyj4oQ==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -5640,7 +5640,7 @@ snapshots:
       idb-keyval: 6.2.1
       ox: 0.6.9(typescript@5.9.2)
       preact: 10.24.2
-      viem: 2.37.7(typescript@5.9.2)
+      viem: 2.37.8(typescript@5.9.2)
       zustand: 5.0.3(@types/react@19.1.13)(react@19.1.1)(use-sync-external-store@1.5.0(react@19.1.1))
     transitivePeerDependencies:
       - '@types/react'
@@ -5652,7 +5652,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@clerk/chrome-extension@2.6.1(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))':
+  '@clerk/chrome-extension@2.6.2(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))':
     dependencies:
       '@clerk/clerk-js': 5.95.0(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))
       '@clerk/clerk-react': 5.48.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -11282,7 +11282,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  viem@2.37.7(typescript@5.9.2):
+  viem@2.37.8(typescript@5.9.2):
     dependencies:
       '@noble/curves': 1.9.1
       '@noble/hashes': 1.8.0
