@@ -26,7 +26,7 @@ importers:
     dependencies:
       '@clerk/chrome-extension':
         specifier: ^2.6.0
-        version: 2.6.1(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))
+        version: 2.6.2(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))
       '@radix-ui/react-slot':
         specifier: ^1.2.3
         version: 1.2.3(@types/react@19.1.13)(react@19.1.1)
@@ -47,7 +47,7 @@ importers:
         version: 19.1.1(react@19.1.1)
       react-router-dom:
         specifier: ^7.9.1
-        version: 7.9.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+        version: 7.9.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       tailwind-merge:
         specifier: ^3.3.1
         version: 3.3.1
@@ -99,7 +99,7 @@ importers:
         version: 19.1.1(react@19.1.1)
       react-router-dom:
         specifier: ^7.9.1
-        version: 7.9.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+        version: 7.9.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
     devDependencies:
       '@eslint/compat':
         specifier: ^1.3.2
@@ -286,15 +286,15 @@ packages:
   '@base-org/account@2.0.1':
     resolution: {integrity: sha512-tySVNx+vd6XEynZL0uvB10uKiwnAfThr8AbKTwILVG86mPbLAhEOInQIk+uDnvpTvfdUhC1Bi5T/46JvFoLZQQ==}
 
-  '@clerk/chrome-extension@2.6.1':
-    resolution: {integrity: sha512-paAUOzK2+XcF8wCvtxPXWOOiJPHqYyeF7Per3J3hxpfplRS1uDptO/+GEajEEhQA0uV2sqmSZYTiRKtx2ft+JQ==}
+  '@clerk/chrome-extension@2.6.2':
+    resolution: {integrity: sha512-npJTdEIOxaDGgu48eh8Nry6DUz5qfFYtRuS5Cv7kwPueWdtVIC9Yu0YM6eLZMemwhHXMl7dePktKrzOpu5Ct7w==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
       react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-0
 
-  '@clerk/clerk-js@5.95.0':
-    resolution: {integrity: sha512-SLIgFPymcL9tV0D/c02TF86F5+C5NecPrd0qVkMzbnQ0cqo5W6RPuQE4ogOHuV+4NH4kQRu2hRHm8crBei2fOg==}
+  '@clerk/clerk-js@5.96.0':
+    resolution: {integrity: sha512-3cNZR+dhWvS5sSkVpzZu8VDb8UHDTQOxX/fRMzrn8zleU2ao67DQZyxHQl4aY4gZAhJIc4jg4tnwjKfllWK0yw==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
@@ -307,8 +307,15 @@ packages:
       react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
       react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-0
 
-  '@clerk/localizations@3.25.3':
-    resolution: {integrity: sha512-9/R3PzktThQTmcimUGeag1TGSCwAVf1ZtEsJcpSbzQYe/RpWjSg13CiHsvw+jegFkSEuDcI0nH73k+KgYlMDHw==}
+  '@clerk/clerk-react@5.49.0':
+    resolution: {integrity: sha512-YdprkVMefaYv6LIbO0LpVzcYabXXpujWA/TfBHxsZVrYnrX51tRvBq2ihbNPsttGMYtqyCIpp6wkmqm116aR0g==}
+    engines: {node: '>=18.17.0'}
+    peerDependencies:
+      react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
+      react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-0
+
+  '@clerk/localizations@3.25.4':
+    resolution: {integrity: sha512-LWybwFVaJX3m/SNqzplvQcOITjaHbfK8DOLPpdYTUF7sbBkcFVPiWtZXoEgygCg102Dlrrf0aGMXasR/qCPJsw==}
     engines: {node: '>=18.17.0'}
 
   '@clerk/shared@3.26.1':
@@ -323,8 +330,24 @@ packages:
       react-dom:
         optional: true
 
+  '@clerk/shared@3.27.0':
+    resolution: {integrity: sha512-dVtmZ3+g/QrofBfnAa/SRDS+8tC58nmDT2+4+0OsTedq6F2u6rETTYZIn9P63U3BaRII7ItMFW4c8WgZXOnSIw==}
+    engines: {node: '>=18.17.0'}
+    peerDependencies:
+      react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
+      react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
   '@clerk/types@4.88.0':
     resolution: {integrity: sha512-OAepuiszOrheIThdCtBRiRSq0A3grlD2yhUUO8kvMFv4Uys95gSzkzuvQjUWXZZ23yOdTl6eRUXjtjCGto116w==}
+    engines: {node: '>=18.17.0'}
+
+  '@clerk/types@4.89.0':
+    resolution: {integrity: sha512-4pT8s/f05C3w1ggRvF12Vr+Ms8GisVBNoWG56znGuofoQ4pzLhJJTU6daVCxTjkPf30IlYtQfoAUaKjXDwH/rw==}
     engines: {node: '>=18.17.0'}
 
   '@coinbase/wallet-sdk@4.3.0':
@@ -4686,15 +4709,15 @@ packages:
     resolution: {integrity: sha512-Gvzk7OZpiqKSkxsQvO/mbTN1poglhmAV7gR/DdIrRrSMXraRQQlfikRJOr3Nb9GTMPC5kof948Zy6jJZIFtDvQ==}
     engines: {node: '>=0.10.0'}
 
-  react-router-dom@7.9.1:
-    resolution: {integrity: sha512-U9WBQssBE9B1vmRjo9qTM7YRzfZ3lUxESIZnsf4VjR/lXYz9MHjvOxHzr/aUm4efpktbVOrF09rL/y4VHa8RMw==}
+  react-router-dom@7.9.2:
+    resolution: {integrity: sha512-pagqpVJnjZOfb+vIM23eTp7Sp/AAJjOgaowhP1f1TWOdk5/W8Uk8d/M/0wfleqx7SgjitjNPPsKeCZE1hTSp3w==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
 
-  react-router@7.9.1:
-    resolution: {integrity: sha512-pfAByjcTpX55mqSDGwGnY9vDCpxqBLASg0BMNAuMmpSGESo/TaOUG6BllhAtAkCGx8Rnohik/XtaqiYUJtgW2g==}
+  react-router@7.9.2:
+    resolution: {integrity: sha512-i2TPp4dgaqrOqiRGLZmqh2WXmbdFknUyiCRmSKs0hf6fWXkTKg5h56b+9F22NbGRAMxjYfqQnpi63egzD2SuZA==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
@@ -5343,8 +5366,8 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  viem@2.37.7:
-    resolution: {integrity: sha512-KmTK/xc6790I0V9iaiJz8C3RdGevpU+fPvg53eOlfEfsfz0wCypXqOlOmCcjzkpmf2XFoEtu9MAxhMqk8YdNNA==}
+  viem@2.37.8:
+    resolution: {integrity: sha512-mL+5yvCQbRIR6QvngDQMfEiZTfNWfd+/QL5yFaOoYbpH3b1Q2ddwF7YG2eI2AcYSh9LE1gtUkbzZLFUAVyj4oQ==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -5640,7 +5663,7 @@ snapshots:
       idb-keyval: 6.2.1
       ox: 0.6.9(typescript@5.9.2)
       preact: 10.24.2
-      viem: 2.37.7(typescript@5.9.2)
+      viem: 2.37.8(typescript@5.9.2)
       zustand: 5.0.3(@types/react@19.1.13)(react@19.1.1)(use-sync-external-store@1.5.0(react@19.1.1))
     transitivePeerDependencies:
       - '@types/react'
@@ -5652,11 +5675,11 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@clerk/chrome-extension@2.6.1(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))':
+  '@clerk/chrome-extension@2.6.2(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))':
     dependencies:
-      '@clerk/clerk-js': 5.95.0(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))
-      '@clerk/clerk-react': 5.48.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@clerk/shared': 3.26.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@clerk/clerk-js': 5.96.0(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))
+      '@clerk/clerk-react': 5.49.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@clerk/shared': 3.27.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
       webextension-polyfill: 0.12.0
@@ -5670,12 +5693,12 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@clerk/clerk-js@5.95.0(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))':
+  '@clerk/clerk-js@5.96.0(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))':
     dependencies:
       '@base-org/account': 2.0.1(@types/react@19.1.13)(react@19.1.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))
-      '@clerk/localizations': 3.25.3
-      '@clerk/shared': 3.26.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@clerk/types': 4.88.0
+      '@clerk/localizations': 3.25.4
+      '@clerk/shared': 3.27.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@clerk/types': 4.89.0
       '@coinbase/wallet-sdk': 4.3.0
       '@emotion/cache': 11.11.0
       '@emotion/react': 11.11.1(@types/react@19.1.13)(react@19.1.1)
@@ -5716,9 +5739,17 @@ snapshots:
       react-dom: 19.1.1(react@19.1.1)
       tslib: 2.8.1
 
-  '@clerk/localizations@3.25.3':
+  '@clerk/clerk-react@5.49.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
-      '@clerk/types': 4.88.0
+      '@clerk/shared': 3.27.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@clerk/types': 4.89.0
+      react: 19.1.1
+      react-dom: 19.1.1(react@19.1.1)
+      tslib: 2.8.1
+
+  '@clerk/localizations@3.25.4':
+    dependencies:
+      '@clerk/types': 4.89.0
 
   '@clerk/shared@3.26.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
@@ -5732,7 +5763,23 @@ snapshots:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
 
+  '@clerk/shared@3.27.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+    dependencies:
+      '@clerk/types': 4.89.0
+      dequal: 2.0.3
+      glob-to-regexp: 0.4.1
+      js-cookie: 3.0.5
+      std-env: 3.9.0
+      swr: 2.3.4(react@19.1.1)
+    optionalDependencies:
+      react: 19.1.1
+      react-dom: 19.1.1(react@19.1.1)
+
   '@clerk/types@4.88.0':
+    dependencies:
+      csstype: 3.1.3
+
+  '@clerk/types@4.89.0':
     dependencies:
       csstype: 3.1.3
 
@@ -10496,13 +10543,13 @@ snapshots:
 
   react-refresh@0.9.0: {}
 
-  react-router-dom@7.9.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+  react-router-dom@7.9.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
     dependencies:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
-      react-router: 7.9.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      react-router: 7.9.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
 
-  react-router@7.9.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+  react-router@7.9.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
     dependencies:
       cookie: 1.0.2
       react: 19.1.1
@@ -11282,7 +11329,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  viem@2.37.7(typescript@5.9.2):
+  viem@2.37.8(typescript@5.9.2):
     dependencies:
       '@noble/curves': 1.9.1
       '@noble/hashes': 1.8.0
