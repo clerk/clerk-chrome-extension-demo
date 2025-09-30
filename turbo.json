@@ -11,8 +11,8 @@
         ".env*"
       ],
       "outputs": [
-        ".next/**",
-        "!.next/cache/**"
+        "dist/**",
+        "build/**"
       ]
     },
     "build:firefox": {
@@ -24,8 +24,8 @@
         ".env*"
       ],
       "outputs": [
-        ".next/**",
-        "!.next/cache/**"
+        "dist/**",
+        "build/**"
       ]
     },
     "lint": {
@@ -58,8 +58,8 @@
         ".env*"
       ],
       "outputs": [
-        ".next/**",
-        "!.next/cache/**"
+        "dist/**",
+        "build/**"
       ]
     },
     "package:firefox": {
@@ -71,8 +71,8 @@
         ".env*"
       ],
       "outputs": [
-        ".next/**",
-        "!.next/cache/**"
+        "dist/**",
+        "build/**"
       ]
     }
   }

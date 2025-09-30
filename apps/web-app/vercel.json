@@ -1,0 +1,6 @@
+{
+  "framework": "vite",
+  "installCommand": "pnpm --filter web-app... i",
+  "buildCommand": "pnpm build",
+  "outputDirectory": "dist"
+}
