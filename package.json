@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "prettier": "^3.6.2",
-    "turbo": "^2.5.6",
+    "turbo": "^2.5.8",
     "typescript": "^5.9.2"
   },
   "pnpm": {
@@ -24,7 +24,7 @@
       "msgpackr": "^1.10.1"
     }
   },
-  "packageManager": "pnpm@10.16.1",
+  "packageManager": "pnpm@10.17.1",
   "engines": {
     "node": ">=18"
   }

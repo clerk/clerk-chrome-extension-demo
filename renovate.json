@@ -20,11 +20,14 @@
 		"before 9pm every weekday"
 	],
 	"prHeader": "Repo Dependency Update",
+	"ignoreDeps": [
+		"tailwindcss"
+	],
 	"assignees": [
 		"royanger"
 	],
 	"reviewers": [
-		"royanger",
+		"royanger"
 	],
 	"labels": [
 		"deps"
