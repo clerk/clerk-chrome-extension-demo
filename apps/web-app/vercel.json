@@ -1,6 +1,6 @@
 {
   "framework": "vite",
-  "installCommant": "pnpm --filter web-app... i",
-  "buildCommand": "turbo run build",
-  "outputDirectory": "apps/web-app/dist"
+  "installCommand": "pnpm --filter web-app... i",
+  "buildCommand": "pnpm build",
+  "outputDirectory": "dist"
 }
