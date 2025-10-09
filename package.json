@@ -24,7 +24,7 @@
       "msgpackr": "^1.10.1"
     }
   },
-  "packageManager": "pnpm@10.18.0",
+  "packageManager": "pnpm@10.18.1",
   "engines": {
     "node": ">=18"
   }
