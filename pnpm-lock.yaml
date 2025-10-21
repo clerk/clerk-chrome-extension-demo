@@ -26,7 +26,7 @@ importers:
     dependencies:
       '@clerk/chrome-extension':
         specifier: ^2.7.3
-        version: 2.7.6(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)(use-sync-external-store@1.6.0(react@19.2.0))(zod@4.1.12)
+        version: 2.7.7(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)(use-sync-external-store@1.6.0(react@19.2.0))(zod@4.1.12)
       '@radix-ui/react-slot':
         specifier: ^1.2.3
         version: 1.2.3(@types/react@19.2.2)(react@19.2.0)
@@ -286,8 +286,8 @@ packages:
   '@base-org/account@2.0.1':
     resolution: {integrity: sha512-tySVNx+vd6XEynZL0uvB10uKiwnAfThr8AbKTwILVG86mPbLAhEOInQIk+uDnvpTvfdUhC1Bi5T/46JvFoLZQQ==}
 
-  '@clerk/chrome-extension@2.7.6':
-    resolution: {integrity: sha512-HlQQOkTrjwRkQb5I6EO9y73YG3+fQwzOJMMq/dLJ6ag/mmiTfYJA9O3nY+aEZCX8mjaffCae6/aiWGKPnkVfwg==}
+  '@clerk/chrome-extension@2.7.7':
+    resolution: {integrity: sha512-RWFDemeZyYhZeA8v8PqY6CKnUUMvuU6+uBzXz+vGK6cqORNKPylzX8hI4IRBlvktv9YkvcFmIlZhXU1pZpa2rA==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
@@ -4809,6 +4809,11 @@ packages:
     engines: {node: '>= 0.4'}
     hasBin: true
 
+  resolve@1.22.11:
+    resolution: {integrity: sha512-RfqAvLnMl313r7c9oclB1HhUEAezcpLjz95wFH4LVuhk9JF/r22qmVP9AMmOU4vMX7Q8pN8jwNg/CSpdFnMjTQ==}
+    engines: {node: '>= 0.4'}
+    hasBin: true
+
   resolve@2.0.0-next.5:
     resolution: {integrity: sha512-U7WjGVG9sH8tvjW5SmGbQuui75FiyjAX72HX15DwBBwF9dNiQZRQAg9nnPhYy+TUnE0+VcrttuvNI8oSxZcocA==}
     hasBin: true
@@ -5658,7 +5663,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@clerk/chrome-extension@2.7.6(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)(use-sync-external-store@1.6.0(react@19.2.0))(zod@4.1.12)':
+  '@clerk/chrome-extension@2.7.7(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)(use-sync-external-store@1.6.0(react@19.2.0))(zod@4.1.12)':
     dependencies:
       '@clerk/clerk-js': 5.102.0(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)(use-sync-external-store@1.6.0(react@19.2.0))(zod@4.1.12)
       '@clerk/clerk-react': 5.53.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
@@ -8383,7 +8388,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.28.4
       cosmiconfig: 7.1.0
-      resolve: 1.22.10
+      resolve: 1.22.11
 
   balanced-match@1.0.2: {}
 
@@ -10622,6 +10627,12 @@ snapshots:
       path-parse: 1.0.7
 
   resolve@1.22.10:
+    dependencies:
+      is-core-module: 2.16.1
+      path-parse: 1.0.7
+      supports-preserve-symlinks-flag: 1.0.0
+
+  resolve@1.22.11:
     dependencies:
       is-core-module: 2.16.1
       path-parse: 1.0.7
