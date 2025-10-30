@@ -63,7 +63,7 @@ importers:
         version: 4.7.0(@vue/compiler-sfc@3.3.4)(prettier@3.6.2)
       '@types/chrome':
         specifier: ^0.1.24
-        version: 0.1.24
+        version: 0.1.27
       '@types/node':
         specifier: ^24.7.2
         version: 24.9.1
@@ -2260,8 +2260,8 @@ packages:
   '@types/babel__traverse@7.28.0':
     resolution: {integrity: sha512-8PvcXf70gTDZBgt9ptxJ8elBeBjcLOAcOtoO/mPJjtji1+CdGbHgm77om1GrsPxsiE+uXIpNSK64UYaIwQXd4Q==}
 
-  '@types/chrome@0.1.24':
-    resolution: {integrity: sha512-9iO9HL2bMeGS4C8m6gNFWUyuPE5HEUFk+rGh+7oriUjg+ata4Fc9PoVlu8xvGm7yoo3AmS3J6fAjoFj61NL2rw==}
+  '@types/chrome@0.1.27':
+    resolution: {integrity: sha512-pkkCb0Ft8X+Igi751POzT+YqchSxUCtB6s4Gs6ttgSj8qzJga/qlJMgSW1mKxuQTW4i0sTqQbqVtzXDS5AU+4A==}
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
@@ -7916,7 +7916,7 @@ snapshots:
     dependencies:
       '@babel/types': 7.28.5
 
-  '@types/chrome@0.1.24':
+  '@types/chrome@0.1.27':
     dependencies:
       '@types/filesystem': 0.0.36
       '@types/har-format': 1.2.16
