@@ -121,7 +121,7 @@ importers:
         version: 8.48.1(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
       '@vitejs/plugin-react':
         specifier: ^5.0.4
-        version: 5.1.1(vite@7.2.6(@types/node@24.10.1)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(yaml@2.8.1))
+        version: 5.1.1(vite@7.2.7(@types/node@24.10.1)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(yaml@2.8.1))
       eslint:
         specifier: ^9.37.0
         version: 9.39.1(jiti@1.21.7)
@@ -148,7 +148,7 @@ importers:
         version: 8.48.1(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
       vite:
         specifier: ^7.1.9
-        version: 7.2.6(@types/node@24.10.1)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(yaml@2.8.1)
+        version: 7.2.7(@types/node@24.10.1)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(yaml@2.8.1)
 
   packages/eslint-config:
     devDependencies:
@@ -5447,8 +5447,8 @@ packages:
       typescript:
         optional: true
 
-  vite@7.2.6:
-    resolution: {integrity: sha512-tI2l/nFHC5rLh7+5+o7QjKjSR04ivXDF4jcgV0f/bTQ+OJiITy5S6gaynVsEM+7RqzufMnVbIon6Sr5x1SDYaQ==}
+  vite@7.2.7:
+    resolution: {integrity: sha512-ITcnkFeR3+fI8P1wMgItjGrR10170d8auB4EpMLPqmx6uxElH3a/hHGQabSHKdqd4FXWO1nFIp9rRn7JQ34ACQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -8331,7 +8331,7 @@ snapshots:
       - supports-color
       - vitest
 
-  '@vitejs/plugin-react@5.1.1(vite@7.2.6(@types/node@24.10.1)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(yaml@2.8.1))':
+  '@vitejs/plugin-react@5.1.1(vite@7.2.7(@types/node@24.10.1)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(yaml@2.8.1))':
     dependencies:
       '@babel/core': 7.28.5
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.5)
@@ -8339,7 +8339,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.47
       '@types/babel__core': 7.20.5
       react-refresh: 0.18.0
-      vite: 7.2.6(@types/node@24.10.1)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(yaml@2.8.1)
+      vite: 7.2.7(@types/node@24.10.1)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(yaml@2.8.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -11532,7 +11532,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  vite@7.2.6(@types/node@24.10.1)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(yaml@2.8.1):
+  vite@7.2.7(@types/node@24.10.1)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(yaml@2.8.1):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
