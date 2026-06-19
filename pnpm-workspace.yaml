@@ -2,3 +2,6 @@ minimumReleaseAge: 2880
 packages:
   - "apps/*"
   - "packages/*"
+minimumReleaseAgeExclude:
+  # Renovate security update: vite@7.3.5
+  - vite@7.3.5
