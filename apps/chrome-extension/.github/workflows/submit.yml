@@ -21,7 +21,7 @@ jobs:
       - name: Use Node.js 22.x
         uses: actions/setup-node@v5.0.0
         with:
-          node-version: 22.x
+          node-version: 24.x
           cache: "pnpm"
       - name: Build the extension
         run: pnpm build
