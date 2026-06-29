@@ -169,7 +169,7 @@ importers:
         version: 2.5.8(eslint@9.39.4(jiti@1.21.7))(turbo@2.10.0)
       eslint-plugin-only-warn:
         specifier: ^1.1.0
-        version: 1.1.0
+        version: 1.2.1
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -4429,9 +4429,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9
 
-  eslint-plugin-only-warn@1.1.0:
-    resolution: {integrity: sha512-2tktqUAT+Q3hCAU0iSf4xAN1k9zOpjK5WO8104mB0rT/dGhOa09582HN5HlbxNbPRZ0THV7nLGvzugcNOSjzfA==}
-    engines: {node: '>=6'}
+  eslint-plugin-only-warn@1.2.1:
+    resolution: {integrity: sha512-j37hwfaQDEOfkZ1Dpvu/HnWLavlzQxQxfbrU/9Jb4R9qzrE1eTYuRJyrxq7LzLRI8miG5FOV6veoUVhx7AI84w==}
 
   eslint-plugin-playwright@1.8.3:
     resolution: {integrity: sha512-h87JPFHkz8a6oPhn8GRGGhSQoAJjx0AkOv1jME6NoMk2FpEsfvfJJNaQDxLSqSALkCr0IJXPGTnp6SIRVu5Nqg==}
@@ -12169,7 +12168,7 @@ snapshots:
       safe-regex-test: 1.1.0
       string.prototype.includes: 2.0.1
 
-  eslint-plugin-only-warn@1.1.0: {}
+  eslint-plugin-only-warn@1.2.1: {}
 
   eslint-plugin-playwright@1.8.3(eslint-plugin-jest@27.9.0(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.4(jiti@1.21.7)):
     dependencies:
