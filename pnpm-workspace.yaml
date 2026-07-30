@@ -5,3 +5,5 @@ packages:
 minimumReleaseAgeExclude:
   # Renovate security update: vite@7.3.5
   - vite@7.3.5
+  # Renovate security update: turbo@2.9.14
+  - turbo@2.9.14
