@@ -14,7 +14,7 @@ importers:
     devDependencies:
       prettier:
         specifier: ^3.6.2
-        version: 3.8.4
+        version: 3.9.6
       turbo:
         specifier: ^2.5.8
         version: 2.5.8
@@ -38,7 +38,7 @@ importers:
         version: 2.1.1
       plasmo:
         specifier: ^0.90.5
-        version: 0.90.5(@swc/core@1.13.5(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.2)(lodash@4.18.1)(postcss@8.5.23)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(terser@5.49.2)
+        version: 0.90.5(@swc/core@1.13.5(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.2)(lodash@4.18.1)(postcss@8.5.23)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(terser@5.50.0)
       react:
         specifier: ^19.2.0
         version: 19.2.7
@@ -60,7 +60,7 @@ importers:
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.1
-        version: 4.7.1(@vue/compiler-sfc@3.3.4)(prettier@3.8.4)
+        version: 4.7.1(@vue/compiler-sfc@3.3.4)(prettier@3.9.6)
       '@types/chrome':
         specifier: ^0.2.0
         version: 0.2.0
@@ -81,7 +81,7 @@ importers:
         version: 8.5.23
       prettier:
         specifier: ^3.6.2
-        version: 3.8.4
+        version: 3.9.6
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -121,7 +121,7 @@ importers:
         version: 8.62.0(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
       '@vitejs/plugin-react':
         specifier: ^5.0.4
-        version: 5.2.0(vite@7.3.6(@types/node@24.13.3)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(terser@5.49.2)(yaml@2.9.0))
+        version: 5.2.0(vite@7.3.6(@types/node@24.13.3)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(terser@5.50.0)(yaml@2.9.0))
       eslint:
         specifier: ^9.37.0
         version: 9.39.4(jiti@1.21.7)
@@ -139,7 +139,7 @@ importers:
         version: 16.5.0
       prettier:
         specifier: 3.8.4
-        version: 3.8.4
+        version: 3.9.6
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -148,7 +148,7 @@ importers:
         version: 8.62.0(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
       vite:
         specifier: ^7.1.9
-        version: 7.3.6(@types/node@24.13.3)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(terser@5.49.2)(yaml@2.9.0)
+        version: 7.3.6(@types/node@24.13.3)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(terser@5.50.0)(yaml@2.9.0)
 
   packages/eslint-config:
     devDependencies:
@@ -160,7 +160,7 @@ importers:
         version: 8.62.0(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
       '@vercel/style-guide':
         specifier: ^6.0.0
-        version: 6.0.0(eslint@9.39.4(jiti@1.21.7))(prettier@3.8.4)(typescript@5.9.3)
+        version: 6.0.0(eslint@9.39.4(jiti@1.21.7))(prettier@3.9.6)(typescript@5.9.3)
       eslint-config-prettier:
         specifier: ^10.1.8
         version: 10.1.8(eslint@9.39.4(jiti@1.21.7))
@@ -6177,8 +6177,8 @@ packages:
       prettier:
         optional: true
 
-  prettier@3.8.4:
-    resolution: {integrity: sha512-N2MylSdi48+5N/6S5j+maeHbUSIzzZ5uOcX5Hm4QpV8Dkb1HFjfAKTKX6yNPJQD9AhcT3ifHNB66tWTTJDi11Q==}
+  prettier@3.9.6:
+    resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -6762,8 +6762,8 @@ packages:
     resolution: {integrity: sha512-7jDLIdD2Zp0bDe5r3D2qtkd1QOCacylBuL7oa4udvN6v2pqr4+LcCr67C8DR1zkpaZ8XosF5m1yQSabKAW6f2g==}
     engines: {node: '>=14.16'}
 
-  terser@5.49.2:
-    resolution: {integrity: sha512-rGbJiKeQ4WDe3EXlDAIaQcwftVfv2Q8o1awFNfvXolJYKkb1AuZY1RTOmqx4LJXZENbWZA7eIsYGHuEzHsi1nQ==}
+  terser@5.50.0:
+    resolution: {integrity: sha512-CN9BVxWhgS/hRxtUMjtC2uRWSTcSfQFHMDWma6sKKfIivCD91sM+FOPfvwoaRMqCSrUpe1nv3jDamd9eEQ4y+w==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -8100,13 +8100,13 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@ianvs/prettier-plugin-sort-imports@4.7.1(@vue/compiler-sfc@3.3.4)(prettier@3.8.4)':
+  '@ianvs/prettier-plugin-sort-imports@4.7.1(@vue/compiler-sfc@3.3.4)(prettier@3.9.6)':
     dependencies:
       '@babel/generator': 7.29.7
       '@babel/parser': 7.29.7
       '@babel/traverse': 7.29.7
       '@babel/types': 7.29.7
-      prettier: 3.8.4
+      prettier: 3.9.6
       semver: 7.8.5
     optionalDependencies:
       '@vue/compiler-sfc': 3.3.4
@@ -8578,14 +8578,14 @@ snapshots:
     transitivePeerDependencies:
       - '@parcel/core'
 
-  '@parcel/config-default@2.9.3(@parcel/core@2.9.3)(@swc/helpers@0.5.23)(postcss@8.5.23)(terser@5.49.2)(typescript@5.8.2)':
+  '@parcel/config-default@2.9.3(@parcel/core@2.9.3)(@swc/helpers@0.5.23)(postcss@8.5.23)(terser@5.50.0)(typescript@5.8.2)':
     dependencies:
       '@parcel/bundler-default': 2.9.3(@parcel/core@2.9.3)
       '@parcel/compressor-raw': 2.9.3(@parcel/core@2.9.3)
       '@parcel/core': 2.9.3
       '@parcel/namer-default': 2.9.3(@parcel/core@2.9.3)
       '@parcel/optimizer-css': 2.9.3(@parcel/core@2.9.3)
-      '@parcel/optimizer-htmlnano': 2.9.3(@parcel/core@2.9.3)(postcss@8.5.23)(terser@5.49.2)(typescript@5.8.2)
+      '@parcel/optimizer-htmlnano': 2.9.3(@parcel/core@2.9.3)(postcss@8.5.23)(terser@5.50.0)(typescript@5.8.2)
       '@parcel/optimizer-image': 2.9.3(@parcel/core@2.9.3)
       '@parcel/optimizer-svgo': 2.9.3(@parcel/core@2.9.3)
       '@parcel/optimizer-swc': 2.9.3(@parcel/core@2.9.3)(@swc/helpers@0.5.23)
@@ -8759,10 +8759,10 @@ snapshots:
     transitivePeerDependencies:
       - '@parcel/core'
 
-  '@parcel/optimizer-htmlnano@2.9.3(@parcel/core@2.9.3)(postcss@8.5.23)(terser@5.49.2)(typescript@5.8.2)':
+  '@parcel/optimizer-htmlnano@2.9.3(@parcel/core@2.9.3)(postcss@8.5.23)(terser@5.50.0)(typescript@5.8.2)':
     dependencies:
       '@parcel/plugin': 2.9.3(@parcel/core@2.9.3)
-      htmlnano: 2.1.5(postcss@8.5.23)(svgo@2.8.0)(terser@5.49.2)(typescript@5.8.2)
+      htmlnano: 2.1.5(postcss@8.5.23)(svgo@2.8.0)(terser@5.50.0)(typescript@5.8.2)
       nullthrows: 1.1.1
       posthtml: 0.16.6
       svgo: 2.8.0
@@ -9281,10 +9281,10 @@ snapshots:
     transitivePeerDependencies:
       - '@parcel/core'
 
-  '@plasmohq/parcel-config@0.42.0(@swc/core@1.13.5(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(lodash@4.18.1)(postcss@8.5.23)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(terser@5.49.2)(typescript@5.8.2)':
+  '@plasmohq/parcel-config@0.42.0(@swc/core@1.13.5(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(lodash@4.18.1)(postcss@8.5.23)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(terser@5.50.0)(typescript@5.8.2)':
     dependencies:
       '@parcel/compressor-raw': 2.9.3(@parcel/core@2.9.3)
-      '@parcel/config-default': 2.9.3(@parcel/core@2.9.3)(@swc/helpers@0.5.23)(postcss@8.5.23)(terser@5.49.2)(typescript@5.8.2)
+      '@parcel/config-default': 2.9.3(@parcel/core@2.9.3)(@swc/helpers@0.5.23)(postcss@8.5.23)(terser@5.50.0)(typescript@5.8.2)
       '@parcel/core': 2.9.3
       '@parcel/optimizer-data-url': 2.9.3(@parcel/core@2.9.3)
       '@parcel/reporter-bundle-buddy': 2.9.3(@parcel/core@2.9.3)
@@ -11027,7 +11027,7 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.11.1':
     optional: true
 
-  '@vercel/style-guide@6.0.0(eslint@9.39.4(jiti@1.21.7))(prettier@3.8.4)(typescript@5.9.3)':
+  '@vercel/style-guide@6.0.0(eslint@9.39.4(jiti@1.21.7))(prettier@3.9.6)(typescript@5.9.3)':
     dependencies:
       '@babel/core': 7.28.4
       '@babel/eslint-parser': 7.28.4(@babel/core@7.28.4)(eslint@9.39.4(jiti@1.21.7))
@@ -11048,10 +11048,10 @@ snapshots:
       eslint-plugin-tsdoc: 0.2.17
       eslint-plugin-unicorn: 51.0.1(eslint@9.39.4(jiti@1.21.7))
       eslint-plugin-vitest: 0.3.26(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
-      prettier-plugin-packagejson: 2.5.19(prettier@3.8.4)
+      prettier-plugin-packagejson: 2.5.19(prettier@3.9.6)
     optionalDependencies:
       eslint: 9.39.4(jiti@1.21.7)
-      prettier: 3.8.4
+      prettier: 3.9.6
       typescript: 5.9.3
     transitivePeerDependencies:
       - eslint-import-resolver-webpack
@@ -11060,7 +11060,7 @@ snapshots:
       - supports-color
       - vitest
 
-  '@vitejs/plugin-react@5.2.0(vite@7.3.6(@types/node@24.13.3)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(terser@5.49.2)(yaml@2.9.0))':
+  '@vitejs/plugin-react@5.2.0(vite@7.3.6(@types/node@24.13.3)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(terser@5.50.0)(yaml@2.9.0))':
     dependencies:
       '@babel/core': 7.29.7
       '@babel/plugin-transform-react-jsx-self': 7.29.7(@babel/core@7.29.7)
@@ -11068,7 +11068,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-rc.3
       '@types/babel__core': 7.20.5
       react-refresh: 0.18.0
-      vite: 7.3.6(@types/node@24.13.3)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(terser@5.49.2)(yaml@2.9.0)
+      vite: 7.3.6(@types/node@24.13.3)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(terser@5.50.0)(yaml@2.9.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -12775,7 +12775,7 @@ snapshots:
 
   hosted-git-info@2.8.9: {}
 
-  htmlnano@2.1.5(postcss@8.5.23)(svgo@2.8.0)(terser@5.49.2)(typescript@5.8.2):
+  htmlnano@2.1.5(postcss@8.5.23)(svgo@2.8.0)(terser@5.50.0)(typescript@5.8.2):
     dependencies:
       '@types/relateurl': 0.2.33
       cosmiconfig: 9.0.0(typescript@5.8.2)
@@ -12783,7 +12783,7 @@ snapshots:
     optionalDependencies:
       postcss: 8.5.23
       svgo: 2.8.0
-      terser: 5.49.2
+      terser: 5.50.0
     transitivePeerDependencies:
       - typescript
 
@@ -13538,7 +13538,7 @@ snapshots:
   metro-minify-terser@0.83.7:
     dependencies:
       flow-enums-runtime: 0.0.6
-      terser: 5.49.2
+      terser: 5.50.0
 
   metro-resolver@0.83.7:
     dependencies:
@@ -13988,7 +13988,7 @@ snapshots:
 
   pirates@4.0.7: {}
 
-  plasmo@0.90.5(@swc/core@1.13.5(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.2)(lodash@4.18.1)(postcss@8.5.23)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(terser@5.49.2):
+  plasmo@0.90.5(@swc/core@1.13.5(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(@types/node@24.13.2)(lodash@4.18.1)(postcss@8.5.23)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(terser@5.50.0):
     dependencies:
       '@expo/spawn-async': 1.7.2
       '@parcel/core': 2.9.3
@@ -13996,7 +13996,7 @@ snapshots:
       '@parcel/package-manager': 2.9.3(@parcel/core@2.9.3)
       '@parcel/watcher': 2.5.1
       '@plasmohq/init': 0.7.0
-      '@plasmohq/parcel-config': 0.42.0(@swc/core@1.13.5(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(lodash@4.18.1)(postcss@8.5.23)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(terser@5.49.2)(typescript@5.8.2)
+      '@plasmohq/parcel-config': 0.42.0(@swc/core@1.13.5(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)(lodash@4.18.1)(postcss@8.5.23)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(terser@5.50.0)(typescript@5.8.2)
       '@plasmohq/parcel-core': 0.1.11
       buffer: 6.0.3
       chalk: 5.4.1
@@ -14160,14 +14160,14 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-packagejson@2.5.19(prettier@3.8.4):
+  prettier-plugin-packagejson@2.5.19(prettier@3.9.6):
     dependencies:
       sort-package-json: 3.4.0
       synckit: 0.11.11
     optionalDependencies:
-      prettier: 3.8.4
+      prettier: 3.9.6
 
-  prettier@3.8.4: {}
+  prettier@3.9.6: {}
 
   pretty-format@29.7.0:
     dependencies:
@@ -14915,7 +14915,7 @@ snapshots:
       type-fest: 2.19.0
       unique-string: 3.0.0
 
-  terser@5.49.2:
+  terser@5.50.0:
     dependencies:
       '@jridgewell/source-map': 0.3.11
       acorn: 8.18.0
@@ -15235,7 +15235,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  vite@7.3.6(@types/node@24.13.3)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(terser@5.49.2)(yaml@2.9.0):
+  vite@7.3.6(@types/node@24.13.3)(jiti@1.21.7)(less@4.4.2)(lightningcss@1.30.2)(sass@1.93.2)(terser@5.50.0)(yaml@2.9.0):
     dependencies:
       esbuild: 0.28.1
       fdir: 6.5.0(picomatch@4.0.4)
@@ -15250,7 +15250,7 @@ snapshots:
       less: 4.4.2
       lightningcss: 1.30.2
       sass: 1.93.2
-      terser: 5.49.2
+      terser: 5.50.0
       yaml: 2.9.0
 
   vlq@1.0.1: {}
