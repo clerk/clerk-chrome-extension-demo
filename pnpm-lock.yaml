@@ -14,7 +14,7 @@ importers:
     devDependencies:
       prettier:
         specifier: ^3.6.2
-        version: 3.8.4
+        version: 3.9.6
       turbo:
         specifier: ^2.5.8
         version: 2.5.8
@@ -60,7 +60,7 @@ importers:
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.1
-        version: 4.7.1(@vue/compiler-sfc@3.3.4)(prettier@3.8.4)
+        version: 4.7.1(@vue/compiler-sfc@3.3.4)(prettier@3.9.6)
       '@types/chrome':
         specifier: ^0.2.0
         version: 0.2.0
@@ -81,7 +81,7 @@ importers:
         version: 8.5.23
       prettier:
         specifier: ^3.6.2
-        version: 3.8.4
+        version: 3.9.6
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -6172,11 +6172,6 @@ packages:
       prettier:
         optional: true
 
-  prettier@3.8.4:
-    resolution: {integrity: sha512-N2MylSdi48+5N/6S5j+maeHbUSIzzZ5uOcX5Hm4QpV8Dkb1HFjfAKTKX6yNPJQD9AhcT3ifHNB66tWTTJDi11Q==}
-    engines: {node: '>=14'}
-    hasBin: true
-
   prettier@3.9.6:
     resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
     engines: {node: '>=14'}
@@ -8097,13 +8092,13 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@ianvs/prettier-plugin-sort-imports@4.7.1(@vue/compiler-sfc@3.3.4)(prettier@3.8.4)':
+  '@ianvs/prettier-plugin-sort-imports@4.7.1(@vue/compiler-sfc@3.3.4)(prettier@3.9.6)':
     dependencies:
       '@babel/generator': 7.29.7
       '@babel/parser': 7.29.7
       '@babel/traverse': 7.29.7
       '@babel/types': 7.29.7
-      prettier: 3.8.4
+      prettier: 3.9.6
       semver: 7.8.5
     optionalDependencies:
       '@vue/compiler-sfc': 3.3.4
@@ -14160,8 +14155,6 @@ snapshots:
       synckit: 0.11.11
     optionalDependencies:
       prettier: 3.9.6
-
-  prettier@3.8.4: {}
 
   prettier@3.9.6: {}
 
