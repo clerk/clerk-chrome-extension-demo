@@ -21,7 +21,7 @@
   "pnpm": {
     "overrides": {
       "braces": "^3.0.3",
-      "msgpackr": "^1.10.1"
+      "msgpackr": "^2.0.0"
     }
   },
   "packageManager": "pnpm@10.18.3",
