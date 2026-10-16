@@ -1,19 +1,14 @@
-import {
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from '@clerk/clerk-react';
+import { SignInButton, Show, UserButton } from '@clerk/react';
 
 function App() {
   return (
     <header>
-      <SignedOut>
+      <Show when="signed-out">
         <SignInButton />
-      </SignedOut>
-      <SignedIn>
+      </Show>
+      <Show when="signed-in">
         <UserButton />
-      </SignedIn>
+      </Show>
     </header>
   );
 }
