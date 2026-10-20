@@ -5,7 +5,7 @@
   "description": "A feature rich implementation of Clerk with a Plasmo-based Chrome Extension.",
   "author": "Clerk",
   "scripts": {
-    "build": "plasmo build",
+    "build": "plasmo build --hoist",
     "build:firefox": "plasmo build --target=firefox-mv2",
     "debug": "plasmo dev --verbose",
     "debug:firefox": "plasmo dev --target=firefox-mv2 --verbose",
