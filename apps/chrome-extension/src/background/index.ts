@@ -1,4 +1,4 @@
-import { createClerkClient } from '@clerk/chrome-extension/background';
+import { createClerkClient } from '@clerk/chrome-extension/client';
 
 console.log('[Service Worker]: Loaded')
 
@@ -10,6 +10,7 @@ if (!publishableKey) {
 async function getToken() {
   const clerk = await createClerkClient({
     publishableKey,
+    background: true,
     syncHost: process.env.PLASMO_PUBLIC_CLERK_SYNC_HOST
   });
 
@@ -24,7 +25,7 @@ async function getToken() {
 // create a listener to listen for messages from content scripts
 // NOTE: A runtime listener cannot be async.
 //       It must return true, in order to keep the connection open and send a response later.
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((_request, _sender, sendResponse) => {
   console.log('[Service Worker]: Handling request for the user\'s current token')
   getToken()
     .then((token) => {

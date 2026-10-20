@@ -68,6 +68,12 @@ To run the example locally, you need to:
 
 9. [Add `chrome-extension://<your CRX ID>` to the Clerk instance's allowed origins](https://clerk.com/docs/guides/sessions/sync-host#add-the-extensions-id-to-your-web-apps-allowed_origins) so the extension can sync sessions with the web app. Use the ID shown at `chrome://extensions`, not the public key.
 
+## Bundle size
+
+The extension's [`.parcelrc`](./apps/chrome-extension/.parcelrc) replaces Plasmo's bundler with Parcel's default bundler. Plasmo's bundler doesn't share code between lazy-loaded chunks, so each Clerk UI component gets its own copy of the UI library. Parcel's default bundler shares that code across chunks instead.
+
+To use the same setup in your extension, copy the `.parcelrc` file and add `@plasmohq/parcel-config` and `@parcel/bundler-default` as dev dependencies, pinned to the versions your Plasmo release uses.
+
 ## Learn more
 
 To learn more about Clerk and Chrome Extensions, check out the following resources:
