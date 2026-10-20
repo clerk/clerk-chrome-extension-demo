@@ -1,0 +1,4 @@
+{
+	"extends": "@plasmohq/parcel-config",
+	"bundler": "@parcel/bundler-default"
+}
