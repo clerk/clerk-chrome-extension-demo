@@ -5,7 +5,7 @@
   "description": "A feature rich implementation of Clerk with a Plasmo-based Chrome Extension.",
   "author": "Clerk",
   "scripts": {
-    "build": "plasmo build --hoist",
+    "build": "plasmo build",
     "build:firefox": "plasmo build --target=firefox-mv2",
     "debug": "plasmo dev --verbose",
     "debug:firefox": "plasmo dev --target=firefox-mv2 --verbose",
@@ -16,7 +16,7 @@
     "start:firefox": "web-ext run --source-dir ./build/firefox-mv2-dev"
   },
   "dependencies": {
-    "@clerk/chrome-extension": "^3.1.94",
+    "@clerk/chrome-extension": "^3.1.98",
     "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
