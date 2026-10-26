@@ -1,0 +1,54 @@
+body {
+	width: 785px;
+	height: 600px;
+}
+
+.layout {
+	display: flex;
+	flex-direction: column;
+	height: 600px;
+}
+
+.layout main {
+	flex-grow: 1;
+	overflow-y: auto;
+}
+
+.page {
+	padding: 1.5rem 3rem 1rem;
+	font-size: 1.125rem;
+}
+
+.centered {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100%;
+	text-align: center;
+}
+
+.nav-bar {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.5rem 1rem;
+	border-top: 1px solid #4b5563;
+	background: #1f2937;
+}
+
+.nav-bar a {
+	color: #e5e7eb;
+	text-decoration: none;
+}
+
+.nav-bar a:hover {
+	text-decoration: underline;
+}
+
+.nav-bar-end {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-left: auto;
+}

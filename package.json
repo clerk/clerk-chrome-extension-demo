@@ -3,15 +3,11 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "build:firefox": "turbo build:firefox",
     "debug": "turbo debug",
-    "debug:firefox": "turbo debug:firefox",
     "dev": "turbo dev",
-    "dev:firefox": "turbo dev:firefox",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "package": "turbo package",
-    "package:firefox": "turbo package:firefox"
+    "zip": "turbo zip"
   },
   "devDependencies": {
     "prettier": "^3.6.2",

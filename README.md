@@ -50,29 +50,32 @@ To run the example locally, you need to:
 2. Create a development application in the [Clerk Dashboard](https://dashboard.clerk.com?utm_source=readme&utm_medium=owned&utm_campaign=chrome-extension&utm_content=10-24-2023&utm_term=clerk-chrome-extension-demo) and [enable the Native API](https://clerk.com/docs/chrome-extension/getting-started/quickstart#enable-native-api).
 
 3. Copy the [`.env.development.example` file](./apps/chrome-extension/.env.development.example) to `/apps/chrome-extension/.env.development` and add the required environment variables.
-* `PLASMO_PUBLIC_CLERK_PUBLISHABLE_KEY` - the Clerk Publishable Key from the [API keys](https://dashboard.clerk.com/last-active?path=api-keys) Dashboard page.
-* `CLERK_FRONTEND_API` - the Clerk Frontend API URL from the `Show API URLs` button on the [API keys](https://dashboard.clerk.com/last-active?path=api-keys) dashboard page.
-* `PLASMO_PUBLIC_CLERK_SYNC_HOST` - set this to `http://localhost` for local development. The popup requires this value, and it lets the extension sync with the companion web app.
+* `WXT_CLERK_PUBLISHABLE_KEY` - the Clerk Publishable Key from the [API keys](https://dashboard.clerk.com/last-active?path=api-keys) Dashboard page.
+* `WXT_CLERK_FRONTEND_API` - the Clerk Frontend API URL from the `Show API URLs` button on the [API keys](https://dashboard.clerk.com/last-active?path=api-keys) dashboard page.
+* `WXT_CLERK_SYNC_HOST` - set this to `http://localhost` for local development. The popup requires this value, and it lets the extension sync with the companion web app.
 
 4. Copy the [`.env.chrome.example` file](./apps/chrome-extension/.env.chrome.example) to `/apps/chrome-extension/.env.chrome` and add the following required environment variables.
-* `CRX_PUBLIC_KEY` - the extension's public key, not its ID. [Generate a consistent CRX ID and public key](https://clerk.com/docs/guides/development/configure-consistent-crx-id), and keep the private key outside this repository.
+* `WXT_CRX_PUBLIC_KEY` - the extension's public key, not its ID. [Generate a consistent CRX ID and public key](https://clerk.com/docs/guides/development/configure-consistent-crx-id), and keep the private key out of version control.
 
 5. Copy the [`.env.example` file](./apps/web-app/.env.example) to `/apps/web-app/.env` and add the required environment variables.
 * `VITE_CLERK_PUBLISHABLE_KEY` - use the same Clerk development instance and Publishable Key as the extension.
 
 6. Run `pnpm install` from the repository root to install dependencies for both applications.
 
-7. Run `pnpm dev` from the repository root. The web app starts at `http://localhost:5173`, and Plasmo creates the extension build at `apps/chrome-extension/build/chrome-mv3-dev`.
+7. Run `pnpm dev` from the repository root. The web app starts at `http://localhost:5173`, and [WXT](https://wxt.dev) builds the extension at `apps/chrome-extension/.output/chrome-mv3-dev` and opens Chrome with it installed.
 
-8. At `chrome://extensions`, enable Developer mode and [load the extension as unpacked](https://clerk.com/docs/chrome-extension/getting-started/quickstart#load-your-chrome-extension-into-your-chromium-based-browser) from `apps/chrome-extension/build/chrome-mv3-dev`. Confirm that Chrome shows the CRX ID you generated.
+8. In the Chrome window WXT opened, go to `chrome://extensions` and confirm that Chrome shows the CRX ID you generated. To use your own Chrome profile instead, enable Developer mode and [load the extension as unpacked](https://clerk.com/docs/chrome-extension/getting-started/quickstart#start-the-development-server) from `apps/chrome-extension/.output/chrome-mv3-dev`.
 
 9. [Add `chrome-extension://<your CRX ID>` to the Clerk instance's allowed origins](https://clerk.com/docs/guides/sessions/sync-host#add-the-extensions-id-to-your-web-apps-allowed_origins) so the extension can sync sessions with the web app. Use the ID shown at `chrome://extensions`, not the public key.
 
-## Bundle size
+10. Open the web app at [http://localhost:5173](http://localhost:5173) in the same Chrome window that runs the extension, then open the extension and sign in. The extension uses the web app's Clerk cookies, so the web app must load at least once first.
 
-The extension's [`.parcelrc`](./apps/chrome-extension/.parcelrc) replaces Plasmo's bundler with Parcel's default bundler. Plasmo's bundler doesn't share code between lazy-loaded chunks, so each Clerk UI component gets its own copy of the UI library. Parcel's default bundler shares that code across chunks instead.
+### Troubleshooting
 
-To use the same setup in your extension, copy the `.parcelrc` file and add `@plasmohq/parcel-config` and `@parcel/bundler-default` as dev dependencies, pinned to the versions your Plasmo release uses.
+If signing in to the extension fails with "Unable to authenticate this browser for your development instance":
+
+1. Open [http://localhost:5173](http://localhost:5173) in the same Chrome window, then reopen the extension and try again.
+2. If the error persists, another Clerk app on `localhost` may have overwritten the cookie, because cookies are shared across all `localhost` ports. On `http://localhost:5173`, open DevTools → **Application** → **Cookies** → `http://localhost`, delete every cookie whose name starts with `__clerk` or `__client`, reload the page, then reopen the extension.
 
 ## Learn more
 

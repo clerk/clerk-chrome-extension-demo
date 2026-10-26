@@ -12,20 +12,7 @@
       ],
       "outputs": [
         "dist/**",
-        "build/**"
-      ]
-    },
-    "build:firefox": {
-      "dependsOn": [
-        "^build:firefox"
-      ],
-      "inputs": [
-        "$TURBO_DEFAULT$",
-        ".env*"
-      ],
-      "outputs": [
-        "dist/**",
-        "build/**"
+        ".output/**"
       ]
     },
     "lint": {
@@ -37,21 +24,13 @@
       "cache": false,
       "persistent": true
     },
-    "debug:firefox": {
-      "cache": false,
-      "persistent": true
-    },
     "dev": {
       "cache": false,
       "persistent": true
     },
-    "dev:firefoxck": {
-      "cache": false,
-      "persistent": true
-    },
-    "package": {
+    "zip": {
       "dependsOn": [
-        "^package"
+        "^zip"
       ],
       "inputs": [
         "$TURBO_DEFAULT$",
@@ -59,20 +38,7 @@
       ],
       "outputs": [
         "dist/**",
-        "build/**"
-      ]
-    },
-    "package:firefox": {
-      "dependsOn": [
-        "^package:firefox"
-      ],
-      "inputs": [
-        "$TURBO_DEFAULT$",
-        ".env*"
-      ],
-      "outputs": [
-        "dist/**",
-        "build/**"
+        ".output/**"
       ]
     }
   }
