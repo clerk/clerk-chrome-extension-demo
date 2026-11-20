@@ -1,6 +1,6 @@
 {
   "name": "chrome-extension",
-  "description": "A feature rich implementation of Clerk with a WXT-based Chrome Extension.",
+  "description": "Clerk sign-in, sync host, and background service worker tokens in a WXT Chrome Extension.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,7 +13,7 @@
     "debug": "wxt --debug"
   },
   "dependencies": {
-    "@clerk/chrome-extension": "^3.1.99",
+    "@clerk/chrome-extension": "^3.1.105",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router": "^8.5.0"
@@ -21,9 +21,9 @@
   "devDependencies": {
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@wxt-dev/module-react": "^1.1.5",
+    "@wxt-dev/module-react": "^1.2.2",
     "typescript": "^5.9.3",
     "web-ext": "^10.5.0",
-    "wxt": "^0.21.3"
+    "wxt": "^0.21.5"
   }
 }

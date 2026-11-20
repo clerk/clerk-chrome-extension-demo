@@ -1,7 +1,7 @@
 export const SDKFeatures = () => {
 	return (
 		<div className="page">
-			<h1>Background Service Worker Support</h1>
+			<h1>Background service worker support</h1>
 			<p>
 				The Clerk Chrome Extension SDK can use{' '}
 				<button

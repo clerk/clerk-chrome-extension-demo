@@ -4,6 +4,5 @@ module.exports = {
 	useTabs: true, // A11y reason to use tabs
 	semi: false,
 	singleQuote: true,
-	plugins: ['prettier-plugin-tailwindcss', 'prettier-plugin-packagejson'],
 	endOfLine: 'auto',
 }

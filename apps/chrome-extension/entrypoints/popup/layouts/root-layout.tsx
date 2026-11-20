@@ -8,7 +8,7 @@ const SYNC_HOST = import.meta.env.WXT_CLERK_SYNC_HOST
 
 if (!PUBLISHABLE_KEY || !SYNC_HOST) {
 	throw new Error(
-		'Please add the WXT_CLERK_PUBLISHABLE_KEY and WXT_CLERK_SYNC_HOST to the .env.development file',
+		`Add WXT_CLERK_PUBLISHABLE_KEY and WXT_CLERK_SYNC_HOST to your .env.${import.meta.env.MODE} file`,
 	)
 }
 
@@ -21,6 +21,8 @@ export const RootLayout = () => {
 			routerReplace={(to) => navigate(to, { replace: true })}
 			publishableKey={PUBLISHABLE_KEY}
 			afterSignOutUrl="/"
+			signInUrl="/sign-in"
+			signUpUrl="/sign-up"
 			syncHost={SYNC_HOST}
 		>
 			<div className="layout">

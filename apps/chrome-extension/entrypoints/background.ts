@@ -6,7 +6,7 @@ export default defineBackground(() => {
 
 	if (!publishableKey) {
 		throw new Error(
-			'Please add the WXT_CLERK_PUBLISHABLE_KEY to the .env.development file',
+			`Add WXT_CLERK_PUBLISHABLE_KEY to your .env.${import.meta.env.MODE} file`,
 		)
 	}
 
@@ -15,6 +15,7 @@ export default defineBackground(() => {
 	async function getToken() {
 		const clerk = await createClerkClient({
 			publishableKey,
+			// Read the session from the sync host's cookie, not only the token the popup stored
 			syncHost,
 			background: true,
 		})
@@ -28,19 +29,19 @@ export default defineBackground(() => {
 		return await clerk.session.getToken()
 	}
 
-	// Create a listener to listen for messages from content scripts
+	// Create a listener to listen for messages from other parts of the extension, such as the demo page
 	// It must return true, in order to keep the connection open and send a response later.
 	// NOTE: A runtime listener cannot be async.
 	browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-		// This example sends the token back to the content script
+		// Only answer the message the demo page sends
+		if (request?.greeting !== 'get-token') return
+
+		// This example sends the token back to the extension page
 		// but you could also use the token to perform actions on behalf of the user
 		getToken()
 			.then((token) => sendResponse({ token }))
 			.catch((error) => {
-				console.error(
-					'[Background service worker] Error:',
-					JSON.stringify(error),
-				)
+				console.error('[Background service worker] Error:', error)
 				// If there is no token then send a null response
 				sendResponse({ token: null })
 			})

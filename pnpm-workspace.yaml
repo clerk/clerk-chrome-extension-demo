@@ -1,3 +1,11 @@
+allowBuilds:
+  "@parcel/watcher": false
+  browser-tabs-lock: false
+  bufferutil: false
+  core-js: false
+  esbuild: false
+  unrs-resolver: false
+  utf-8-validate: false
 minimumReleaseAge: 2880
 packages:
   - "apps/*"
@@ -7,3 +15,6 @@ minimumReleaseAgeExclude:
   - vite@7.3.5 || 7.3.7
   # Renovate security update: postcss@8.5.18 || 8.5.23
   - postcss@8.5.18 || 8.5.23
+overrides:
+  braces: ^3.0.3
+  msgpackr: ^1.10.1

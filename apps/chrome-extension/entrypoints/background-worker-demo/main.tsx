@@ -18,15 +18,14 @@ function BackgroundWorkerDemo() {
 	return (
 		<div className="demo">
 			<div className="demo-content">
-				<h1>Clerk Background Service Worker demo</h1>
+				<h1>Clerk background service worker demo</h1>
 				<p>
-					This new tab simulates a content page where you might want to access
+					This extension page simulates a page where you might want to access
 					user information, or make a request to your backend server and include
 					a user token in the request.
 				</p>
 				<p>
-					Make sure that you are signed into the extension. You can have the
-					popup closed.
+					Ensure you're signed in to the extension. The popup can stay closed.
 				</p>
 				<button type="button" className="button" onClick={getToken}>
 					Get Token

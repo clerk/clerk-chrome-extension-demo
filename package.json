@@ -14,13 +14,7 @@
     "turbo": "^2.5.8",
     "typescript": "^5.9.3"
   },
-  "pnpm": {
-    "overrides": {
-      "braces": "^3.0.3",
-      "msgpackr": "^1.10.1"
-    }
-  },
-  "packageManager": "pnpm@10.18.3",
+  "packageManager": "pnpm@11.27.1",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   }
