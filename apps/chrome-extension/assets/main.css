@@ -1,0 +1,39 @@
+:root {
+	color-scheme: dark;
+	font-family: system-ui, sans-serif;
+}
+
+body {
+	margin: 0;
+	background: #000;
+	color: #fff;
+}
+
+a {
+	color: inherit;
+}
+
+.button {
+	border: 0;
+	border-radius: 6px;
+	padding: 0.5rem 1rem;
+	background: #e5e7eb;
+	color: #374151;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: #d1d5db;
+}
+
+.link-button {
+	padding: 0;
+	border: 0;
+	background: none;
+	color: inherit;
+	font: inherit;
+	text-decoration: underline;
+	cursor: pointer;
+}
