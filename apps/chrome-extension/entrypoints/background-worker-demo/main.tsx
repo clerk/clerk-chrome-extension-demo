@@ -20,9 +20,8 @@ function BackgroundWorkerDemo() {
 			<div className="demo-content">
 				<h1>Clerk background service worker demo</h1>
 				<p>
-					This extension page simulates a page where you might want to access
-					user information, or make a request to your backend server and include
-					a user token in the request.
+					This extension page asks the background service worker for the user's
+					session token, which you'd include in requests to your backend.
 				</p>
 				<p>
 					Ensure you're signed in to the extension. The popup can stay closed.

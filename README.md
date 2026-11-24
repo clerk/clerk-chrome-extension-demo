@@ -47,29 +47,31 @@ To run the example locally, you need to:
 
 2. Create a development application in the [Clerk Dashboard](https://dashboard.clerk.com?utm_source=readme&utm_medium=owned&utm_campaign=chrome-extension&utm_content=10-24-2023&utm_term=clerk-chrome-extension-demo) and [enable the Native API](https://clerk.com/docs/chrome-extension/getting-started/quickstart#enable-native-api).
 
-3. Copy the [`.env.development.example` file](./apps/chrome-extension/.env.development.example) to `/apps/chrome-extension/.env.development` and add the required environment variables.
+3. In the Clerk Dashboard, navigate to your development instance's [**Protections**](https://dashboard.clerk.com/~/protect/protections) page and turn off **Challenge suspicious sign-ups** and **Require Device Intelligence checks**. Development instances treat the extension as a browser, and it can't run these checks, so sign-ups fail while they're on. Leave them on for production. See [Turn off bot protection](https://clerk.com/docs/chrome-extension/getting-started/quickstart#turn-off-bot-protection).
+
+4. Copy the [`.env.development.example` file](./apps/chrome-extension/.env.development.example) to `/apps/chrome-extension/.env.development` and add the required environment variables.
 
 - `WXT_CLERK_PUBLISHABLE_KEY` - the Clerk Publishable Key from the [API keys](https://dashboard.clerk.com/last-active?path=api-keys) Dashboard page.
 - `WXT_CLERK_FRONTEND_API` - the Clerk Frontend API URL from the `Show API URLs` button on the [API keys](https://dashboard.clerk.com/last-active?path=api-keys) dashboard page.
 - `WXT_CLERK_SYNC_HOST` - set this to `http://localhost` for local development. The popup requires this value, and it lets the extension sync with the companion web app.
 
-4. Copy the [`.env.chrome.example` file](./apps/chrome-extension/.env.chrome.example) to `/apps/chrome-extension/.env.chrome` and add the following required environment variables.
+5. Copy the [`.env.chrome.example` file](./apps/chrome-extension/.env.chrome.example) to `/apps/chrome-extension/.env.chrome` and add the following required environment variables.
 
 - `WXT_CRX_PUBLIC_KEY` - the extension's public key, not its ID. [Generate a consistent CRX ID and public key](https://clerk.com/docs/guides/development/configure-consistent-crx-id), and keep the private key out of version control.
 
-5. Copy the [`.env.example` file](./apps/web-app/.env.example) to `/apps/web-app/.env` and add the required environment variables.
+6. Copy the [`.env.example` file](./apps/web-app/.env.example) to `/apps/web-app/.env` and add the required environment variables.
 
 - `VITE_CLERK_PUBLISHABLE_KEY` - use the same Clerk development instance and Publishable Key as the extension.
 
-6. Run `pnpm install` from the repository root to install dependencies for both applications.
+7. Run `pnpm install` from the repository root to install dependencies for both applications.
 
-7. Run `pnpm dev` from the repository root. The web app starts at `http://localhost:5173`. [WXT](https://wxt.dev) builds the extension at `apps/chrome-extension/.output/chrome-mv3-dev` and opens Chrome with it installed.
+8. Run `pnpm dev` from the repository root. The web app starts at `http://localhost:5173`. [WXT](https://wxt.dev) builds the extension at `apps/chrome-extension/.output/chrome-mv3-dev` and opens Chrome with it installed.
 
-8. In the Chrome window WXT opened, go to `chrome://extensions` and confirm that Chrome shows the CRX ID you generated. To use your own Chrome profile instead, enable Developer mode and [load the extension as unpacked](https://clerk.com/docs/chrome-extension/getting-started/quickstart#start-the-development-server) from `apps/chrome-extension/.output/chrome-mv3-dev`.
+9. In the Chrome window WXT opened, go to `chrome://extensions` and confirm that Chrome shows the CRX ID you generated. To use your own Chrome profile instead, enable Developer mode and [load the extension as unpacked](https://clerk.com/docs/chrome-extension/getting-started/quickstart#start-the-development-server) from `apps/chrome-extension/.output/chrome-mv3-dev`.
 
-9. [Add `chrome-extension://<your CRX ID>` to the Clerk instance's allowed origins](https://clerk.com/docs/guides/sessions/sync-host#add-the-extensions-id-to-your-web-apps-allowed_origins) so the extension can sync sessions with the web app. Use the ID shown at `chrome://extensions`, not the public key.
+10. [Add `chrome-extension://<your CRX ID>` to the Clerk instance's allowed origins](https://clerk.com/docs/guides/sessions/sync-host#add-the-extensions-id-to-your-web-apps-allowed-origins) so the extension can sync sessions with the web app. Use the ID shown at `chrome://extensions`, not the public key.
 
-10. Open the web app at [http://localhost:5173](http://localhost:5173) in the same Chrome window that runs the extension, then open the extension and sign in. In development, the extension needs the dev browser cookie that Clerk sets when the web app loads. WXT opens Chrome with a fresh profile each time `pnpm dev` starts, so load the web app again after every restart.
+11. Open the web app at [http://localhost:5173](http://localhost:5173) in the same Chrome window that runs the extension, then open the extension and sign in. In development, the extension needs the dev browser cookie that Clerk sets when the web app loads. WXT opens Chrome with a fresh profile each time `pnpm dev` starts, so load the web app again after every restart.
 
 To build the extension for production with `pnpm build` or `pnpm zip`, create `/apps/chrome-extension/.env.production` with the same three variables, using your production instance's values. Production builds read `.env.production`, not `.env.development`, and stop with an error if a value is missing.
 
