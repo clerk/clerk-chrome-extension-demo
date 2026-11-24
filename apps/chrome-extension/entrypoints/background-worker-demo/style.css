@@ -1,0 +1,21 @@
+.demo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.demo-content {
+	max-width: 1024px;
+	font-size: 1.125rem;
+}
+
+.token {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 13rem;
+	padding: 1rem;
+	border: 1px solid rgb(255 255 255 / 0.5);
+	word-break: break-all;
+}
